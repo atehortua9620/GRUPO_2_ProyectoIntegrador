@@ -12,7 +12,7 @@
 -Jorge Andres Atehortua Henao:
     Medellin/Antioquia/Colombia, 25 años, Ingeniero mecatronico, Trabajo en Digital House/ ventas LATAM.
 
--Matias.
+-Matias. 
 
 
 -Leonardo.
