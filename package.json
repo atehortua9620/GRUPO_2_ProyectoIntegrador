@@ -1,0 +1,22 @@
+{
+  "name": "proyectointegradordh",
+  "version": "1.0.0",
+  "description": "E-comerce de relojes luxury",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atehortua9620/GRUPO_2_ProyectoIntegrador.git"
+  },
+  "author": "Andres, Matias, Leo, Andres lopera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atehortua9620/GRUPO_2_ProyectoIntegrador/issues"
+  },
+  "homepage": "https://github.com/atehortua9620/GRUPO_2_ProyectoIntegrador#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
