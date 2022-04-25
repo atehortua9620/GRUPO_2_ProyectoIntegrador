@@ -13,8 +13,8 @@
 -Jorge Andres Atehortua Henao:
     Medellin/Antioquia/Colombia, 25 años, Ingeniero mecatronico, Trabajo en Digital House/ ventas LATAM.
 
--Matias. 
-
+-Matias Borysiuk:
+Caseros/Buenos Aires/Argentina, 37 años, Maestro Mayor de Obras y Trabajo en RUKANAY S.A. Constructora familiar.
 
 -Leonardo Ezequiel Bellanza:
     Ciudad Autonoma de Buenos Aires/Belgrano/Argentina, 41 años, Contador Publico y Licenciado en Administracion, Trabajo en un Holding e Inversora.
@@ -28,8 +28,6 @@
 -Rolex:
      Sitio web: https://www.rolex.com/es
      Descripcion:Diseño innovador en lo que refiere a la presentación de las imágenes de los relojes y paisajes
-
-
 
 -Festina:
      Sitio web: https://festina.com/es-ES
