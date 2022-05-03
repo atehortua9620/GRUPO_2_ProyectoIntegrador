@@ -8,6 +8,9 @@ app.use(express.static('Public'));
 
 
 app.get('/', (req,res)=>{
-    res.sendFile(path.resolve(__dirname, './views/Home.html'));
+    res.sendFile(path.resolve(__dirname, './views/index.html'));
 })
 
+app.get('/productDetail', (req,res)=>{
+    res.sendFile(path.resolve(__dirname, './views/productDetail.html'));
+})
