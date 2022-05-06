@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    width: 100vw;
+    height: 50vh;
+}
+footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: solid rgb(192, 14, 14) 1px;
+    width: 100vw;
+    height: 100px;
+    margin-bottom: 0px;
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: solid green 1px; */
+    width: 20%;
+    height: 30px;
+}
+.redes i{
+    font-size: 30px;
+}
