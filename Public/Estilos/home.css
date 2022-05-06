@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.letra{
+    font-family: 'roboto';
+    font-weight: bolder;
+    text-align: center;
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height:  200px;
+    background-color: black;
+   /*  border: solid red 1px; */
+}
+.contenedorUno{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+   /*  border:  solid blue 1px; */
+    
+}
+.logoMenu{
+    height: 70%;
+}
+
+.barraYlupa{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: white;
+    border-radius: 5px;
+    height: 35px;
+    width: 60%;
+}
+.barraYlupa i{
+    margin-top: 5px;
+}
+.search{
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 95%;
+}
+.icon{
+    color: white;
+    font-size: 40px;
+}
+.icons{
+    display: none;
+}
+
+.burguer{
+    display: block;
+}
+.menus{
+    display: none;
+}
+
+/* tabletas  */
+@media(min-width:361px){
+    .contenedorUno{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 40%;
+    }
+    .icons{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        flex-direction: column;
+        /* border: solid white 1px; */
+        width: 20%;
+        height: 100%;
+        /* border: dashed white 1px */
+    }
+
+    .burguer{
+        display: none;
+    }
+    .menus{
+        display: flex;
+        /* align-items: center; */
+        justify-content: space-evenly;
+    
+        width: 100%;
+    }
+    .menus img, .menus .icons{
+        opacity: 0;
+    }
+    .logoMenu{
+        height: 90%;
+    }
+
+}
+
+/* desktop */
+@media(min-width:769px){
+    .icons{
+        flex-direction: row;
+        align-items:center ;
+    }
+}
