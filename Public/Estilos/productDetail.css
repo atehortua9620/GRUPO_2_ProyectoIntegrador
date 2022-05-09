@@ -2,20 +2,36 @@
     margin: 0px;
     padding: 0px;
 }
-main{
-    width: 100vw;
-    height: 50vh;
+
+@keyframes rotationlogo{
+
+    0%    { transform: rotate(0deg); }
+    10%   { transform: rotate(36deg);}
+    20%   { transform: rotate(72deg);} 
+    30%   { transform: rotate(108deg); }
+    40%   { transform: rotate(144deg); }
+    50%  { transform: rotate(180deg); }
+    60%   { transform: rotate(216deg);} 
+    70%   { transform: rotate(252deg); }
+    80%   { transform: rotate(288deg); }
+    90%   { transform: rotate(324deg); }
+    100%  { transform: rotate(360deg); }
+  }
+  footer img{
+    height: 150px;
+    animation: rotationlogo  10s infinite;
 }
+
 footer
 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    border: solid rgb(192, 14, 14) 1px;
-    width: 100vw;
-    height: 100px;
-    margin-bottom: 0px;
+    /* border: solid rgb(192, 14, 14) 1px; */
+    width: 100%;
+    height: 500px;
+    
 }
 .redes{
     display: flex;
@@ -23,9 +39,46 @@ footer
     align-items: center;
     justify-content: space-evenly;
     /* border: solid green 1px; */
-    width: 20%;
+    width: 90%;
     height: 30px;
 }
 .redes i{
     font-size: 30px;
+}
+footer button{
+    border: black solid 1px;
+    border-radius: 10px;
+    color: white;
+    height: 40px;
+    width: 80%;
+    font-family: 'roboto';
+    font-weight: bolder;
+    background: black;
+    box-shadow: inset 10px 5px 20px white;
+}
+
+footer button:hover{
+    cursor: pointer;
+    transition: 500ms;
+    background-color: gray;
+    color: black;
+}
+
+/* tabletas */
+@media(min-width:361px){
+
+}
+/* desktop */
+
+@media(min-width:769px){
+    footer button{
+        width: 30%;
+    }
+    .redes{
+        width: 30%;
+    }
+    footer img{
+        height: 200px;
+   
+    }
 }
