@@ -1,5 +1,7 @@
+
 .main_carrito{
     padding-top: 15px;
+    padding-top:200px;
     display: flex;
     flex-direction: column;
     width: 100%;
