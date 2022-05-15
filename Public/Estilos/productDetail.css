@@ -3,6 +3,7 @@
     padding: 0px;
 }
 
+
 @keyframes rotationlogo{
 
     0%    { transform: rotate(0deg); }
@@ -99,15 +100,49 @@ main button{
     font-weight: bolder;
     background: black;
     box-shadow: inset 10px 5px 20px white;
+    margin-top: 20px;
 }
-
-/*.mitadScreen button:hover{
-    cursor: pointer;
-    transition: 500ms;
+main button:hover{
+    
     background-color: gray;
     color: black;
-} */
+}
+.contenedorProductD{
+    display: flex;
+    flex-direction: column;
+}
 
+.mitadScreen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    /* border: solid red 1px; */
+}
+.mitadScreen img{
+    width: 75%;
+}
+.uno{
+    flex-direction: row;
+    align-items: center;
+}
+.uno i{
+    font-size: 30px;
+}
+.uno i:hover{
+    color: gray;
+}
+.dos{
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.dos h2{
+    margin-bottom: 15px;
+}
 /* tabletas */
 @media(min-width:361px){
 /*     main
