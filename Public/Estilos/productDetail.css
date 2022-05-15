@@ -23,6 +23,7 @@
     animation: rotationlogo  10s infinite;
 }
 
+
 footer
 {
     display: flex;
@@ -109,6 +110,7 @@ main button:hover{
 }
 .contenedorProductD{
     display: flex;
+    padding-top:200px;
     flex-direction: column;
 }
 
@@ -149,6 +151,7 @@ main button:hover{
 
    .contenedorProductD{
         flex-direction: row;
+        padding-top:200px;
         height: 550px;
         flex-wrap: nowrap;
         /* border: solid red 1px; */
@@ -167,10 +170,12 @@ main button:hover{
    .uno img{
        height: 300px;
    }
+ 
 }
 /* desktop */
 
 @media(min-width:769px){
+   
     footer button{
         width: 30%;
     }
@@ -183,5 +188,13 @@ main button:hover{
     } .uno img{
         height: 500px;
     }
-    
+    .contenedorProductD {
+        
+        padding-top:400px;
+        
+   }
+   footer{
+       
+       margin-top:200px
+   }
 }
