@@ -62,8 +62,14 @@ header{
 .icons{
     display: none;
 }
-.linkmenus{
-    height: 10%;
+ header .linkmenus{
+    height: 70%;
+    border: solid red 1px;
+    
+}
+header .linkmenus img{
+    height: 100%;
+    
     
 }
 
