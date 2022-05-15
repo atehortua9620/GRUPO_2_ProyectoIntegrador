@@ -31,9 +31,6 @@ header{
    /*  border:  solid blue 1px; */
     
 }
-.linkmenu{
-    height: 100%;
-}
 a .logoMenu{
     height: 40px;
 }
@@ -186,7 +183,7 @@ main{
     .menus img, .menus .icons{
         opacity: 0;
     }
-    a .logoMenu{
+    .logoMenu{
         height: 90%;
     }
     .sugerencia_item{
