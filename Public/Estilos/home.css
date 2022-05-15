@@ -112,7 +112,7 @@ main{
     border: solid black 2px;
     box-shadow: 5px 5px 10px;
 }
-.sugerencia_item button{
+.sugerencia_item a button{
     border: black solid 1px;
     border-radius: 10px;
     color: white;
@@ -123,8 +123,13 @@ main{
     background: black;
     box-shadow: inset 10px 5px 20px white;
 }
-
-.sugerencia_item button:hover{
+.linkitem{
+    font-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.sugerencia_item a button:hover{
     cursor: pointer;
     transition: 500ms;
     background-color: gray;
