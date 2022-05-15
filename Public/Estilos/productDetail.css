@@ -132,6 +132,7 @@ main button:hover{
 }
 .uno i:hover{
     color: gray;
+    cursor: pointer;
 }
 .dos{
     display: flex;
@@ -145,11 +146,27 @@ main button:hover{
 }
 /* tabletas */
 @media(min-width:361px){
-/*     main
-    {
+
+   .contenedorProductD{
         flex-direction: row;
-        
-    } */
+        height: 550px;
+        flex-wrap: nowrap;
+        /* border: solid red 1px; */
+   }
+   .mitadScreen{
+       justify-content: center;
+       align-items: center;
+       /* border: solid red 1px; */
+       height: 100%;
+   }
+   .dos{
+       
+       text-align: left;
+      
+   }
+   .uno img{
+       height: 300px;
+   }
 }
 /* desktop */
 
@@ -163,5 +180,8 @@ main button:hover{
     footer img{
         height: 200px;
    
+    } .uno img{
+        height: 500px;
     }
+    
 }
