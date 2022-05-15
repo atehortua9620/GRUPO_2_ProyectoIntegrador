@@ -183,8 +183,12 @@ main{
     .menus img, .menus .icons{
         opacity: 0;
     }
+    .linkmenus{
+        height: 60%;
+        cursor: pointer;
+    }
     .logoMenu{
-        height: 90%;
+        height: 100%;
     }
     .sugerencia_item{
         width: 40%;
