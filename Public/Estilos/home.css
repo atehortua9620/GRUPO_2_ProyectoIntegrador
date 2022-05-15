@@ -31,7 +31,9 @@ header{
    /*  border:  solid blue 1px; */
     
 }
-
+.logoMenu{
+    height: 40px;
+}
 
 .barraYlupa{
     display: flex;
@@ -61,16 +63,6 @@ header{
 }
 .icons{
     display: none;
-}
- header .linkmenus{
-    height: 70%;
-    border: solid red 1px;
-    
-}
-header .linkmenus img{
-    height: 100%;
-    
-    
 }
 
 .burguer{
@@ -192,7 +184,7 @@ main{
         opacity: 0;
     }
     .linkmenus{
-        height: 70%;
+        height: 60%;
         cursor: pointer;
     }
     .logoMenu{
