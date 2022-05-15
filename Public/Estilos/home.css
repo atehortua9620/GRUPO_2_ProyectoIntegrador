@@ -31,9 +31,7 @@ header{
    /*  border:  solid blue 1px; */
     
 }
-a .logoMenu{
-    height: 40px;
-}
+
 
 .barraYlupa{
     display: flex;
@@ -63,6 +61,10 @@ a .logoMenu{
 }
 .icons{
     display: none;
+}
+.linkmenus{
+    height: 10%;
+    
 }
 
 .burguer{
