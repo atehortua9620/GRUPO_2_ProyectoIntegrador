@@ -1,17 +1,18 @@
 const express = require('express');
 
-const app = express ();
-const path = require('path');
+const mainRouter = require('./routers/main')
 
-const controller = require('../controllers/paginas');
+const app = express ();
+
+const controller = require('./controllers/paginas');
 
 const port = process.env.PORT || 3000;
 app.listen(port,()=>console.log('server corriendo en el puerto'+port));
 
-app.use(express.static('Public'));
+app.use(express.static('./src/Public'));
 
 
-app.get('/', controller.home);
-app.get('/productDetail',controller.productDetail )
-app.get('/productCar', controller.productCar)
-app.get('/register', controller.register)
+app.use('/', mainRouter);
+app.use('/productCar', mainRouter);
+app.use('/productDar', mainRouter);
+app.use('/register', mainRouter);
