@@ -85,6 +85,21 @@ h1{
     justify-content: center;
 }
 
+.login{
+    width: 100%;
+}
+
+.boton-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    width: 42%;
+    font-family: 'roboto';
+    font-weight: bolder;
+    margin: auto;
+}
+
 /* tabletas */
 @media(min-width:361px){
     .botonSignIn{
