@@ -64,9 +64,32 @@ footer button:hover{
     color: black;
 }
 
+.formulario-register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: grey;
+    padding: 10px;
+    width: 40%;
+    font-family: 'roboto';
+    font-weight: bolder;
+    margin: auto;
+}
+
+.botonSignIn{
+    width: 100%;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
 /* tabletas */
 @media(min-width:361px){
-
+    .botonSignIn{
+        width: 100%;
+    }
 }
 /* desktop */
 
@@ -80,5 +103,8 @@ footer button:hover{
     footer img{
         height: 200px;
    
+    }
+    .botonSignIn{
+        width: 100%;
     }
 }
