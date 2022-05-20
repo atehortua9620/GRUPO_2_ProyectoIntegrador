@@ -16,3 +16,4 @@ app.use('/', mainRouter);
 app.use('/productCar', mainRouter);
 app.use('/productDar', mainRouter);
 app.use('/register', mainRouter);
+app.use('/login', mainRouter);
