@@ -64,9 +64,33 @@ footer button:hover{
     color: black;
 }
 
+.formulario-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: grey;
+    padding: 10px;
+    width: 40%;
+    font-family: 'roboto';
+    font-weight: bolder;
+    margin: auto;
+}
+
+.botonCreateAccount{
+    width: 100%;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
 /* tabletas */
 @media(min-width:361px){
-
+    .botonCreateAccount{
+        width: 100%;
+        font-size:xx-small;
+    }
 }
 /* desktop */
 
@@ -80,5 +104,9 @@ footer button:hover{
     footer img{
         height: 200px;
    
+    }
+    .botonCreateAccount{
+        width: 100%;
+        font-size:13px;
     }
 }
