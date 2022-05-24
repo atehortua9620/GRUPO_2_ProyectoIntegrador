@@ -13,31 +13,7 @@
     <link rel="stylesheet" href="./Estilos/register.css">
 </head>
 <body>
-    <header>
-        <a class='linkmenus' href="/"><img class='logoMenu' src="./images/Logo_negro.png" alt="logo"></a>
-        <form class="contenedorUno" >
-            <div class="barraYlupa"><input class="search letra"  type="text"><i class="fas fa-search"></i></div>
-            <div class="menus">
-                <select name="Categorias" class="barraYlupa letra">
-                    <option value="Categorias">Categorías</option>
-                    <option value="Clasicos">Clasicos</option>
-                    <option value="Smart">Smart</option>
-                    <option value="Sport">Sport</option>
-                    <option value="Hombre">Hombre</option>
-                    <option value="Mujer">Mujer</option>
-                    
-                </select>
-                
-            </div>
-            
-        </form>
-        <div class=" icons">
-            <a href="/productCar"><i class="icon fas fa-cart-arrow-down"></i></a>
-            <a href="/"><i class="icon fas fa-home"></i></a>
-            <a href="/register"><i class="icon fas fa-user-circle"></i></a>
-        </div>
-        <i class=" burguer icon fas fa-bars"></i>
-    </header>
+    <%- include('./partials/menu') %>
     <main>
         <h1>Sign In</h1>
         <form action="/register" method="POST">
@@ -69,16 +45,6 @@
             <a href="/login"><button  class="login">I HAVE AN ACCOUNT</button></a>
         </div>
     </main>
-    <footer> 
-        <img src="/images/Logo_Blanco.png" alt="">
-        <button>CONTACT US</button>
-        <div class="redes">
-            <i class="fa-brands fa-pinterest-square"></i>
-            <i class="fa-brands fa-facebook-square"></i>
-            <i class="fa-brands fa-instagram-square"></i>
-            <i class="fa-brands fa-twitter-square"></i>
-            
-        </div>
-    </footer>
+    <%- include('./partials/footer') %>
     </body>
 </html>
