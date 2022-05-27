@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    border: solid red 1px;
+    /*border: solid red 1px;*/
 
 }
 .productosCarrito{
