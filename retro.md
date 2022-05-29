@@ -26,3 +26,19 @@
         El compañero Matías Borysiuk manifiesta problemas familiares y el mismo aclaro esta situación por los canales oficiales de Digital House, por lo que su aporte al Sprint 2 fue a través de buscar y enviar imágenes para agregar al proyecto, en investigar las dudas y resoluciones que fueron surgiendo en el proyecto, o cuando nos reunimos en equipo el nos ayudaba a nosotros con el código y por estas razones el no efectúo commits en este Sprint 2.
 
 
+* Retrospectiva Sprint 2: 
+
+1. Comenzar a hacer:
+         Reflexiones entre los distintos integrantes del equipo para conocer las opiniones de como ven el proyecto integrador en sus distintas etapas de desarrollo y que sentimientos le producen dicho proyecto poniendose del lado de los Usuarios.
+
+2. Hacer más:
+        Consultar por internet las dudas que vayan surgiendo en el desarrollo de un sitio web y en caso de no poder resolver las dudas por este medio hacer las consultas pertinentes a los profesores de Digital House.
+
+3. Continuar haciendo:
+        Estudio del Playground y Clases en Vivo para aplicar dichos conocimientos en el desarrollo de un sitio web.
+        
+4. Hacer menos:
+        De no subir los cambios directamente a la rama Master en Github en vez de ello se deben subir dichos cambios a los Branchs creados en Github a nombre de cada integrante del equipo y de esta forma tener un mejor control y opinion de los integrantes del equipo comentando en los Pull Request y luego ahí proceder al Merge con la rama Master.
+
+5. Dejar de hacer:
+        Modificaciones al proyecto integrador los distintos integrantes del equipo sobre los mismos archivos para evitar conflictos al momento de subir los cambios a Github.
