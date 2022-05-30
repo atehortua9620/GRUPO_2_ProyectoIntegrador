@@ -17,9 +17,16 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 /*Linea para trabajar con libreria method over ride (librerira para usar PUT y DELETE) */
 app.use(methodOverride('_method'));
+
+
+
 app.use(express.static('./src/Public'));
 app.use('/', mainRouter);
 app.use('/product', productRouter);
+
+/*linea para enviar pagina de error 404 not found */
+app.use((req, res, next) =>{
+    res.status(404).render('./not-found')});
 
 
 

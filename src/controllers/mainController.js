@@ -13,7 +13,10 @@ const rutas ={
     },
     login: (req,res )=>{
         res.render('./login.ejs');
-    }
+    }, 
+    /* notFound: (req, res, next) =>{
+        res.status(404).render('./not-found')
+    } */
 }
 
 module.exports = rutas;
