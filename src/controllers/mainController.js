@@ -1,8 +1,13 @@
-/* const path = require('path'); */
+const path = require('path');
+const fs = require('fs');
+
+const productFilePath = path.join(__dirname, '../database/productos.json');
+const products = JSON.parse(fs.readFileSync(productFilePath, 'utf-8'));
+
 
 const rutas ={
     home: (req,res)=>{
-        res.render('./index.ejs');
+        res.render('./index.ejs', {products});
     },
 
     productCar:(req,res)=>{

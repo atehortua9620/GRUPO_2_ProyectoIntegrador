@@ -19,6 +19,7 @@ main{
     display: flex;
     padding-top:200px;
     flex-direction: column;
+    border: solid red 1px;
 }
 .sugerencias{
     width: 100%;
@@ -99,10 +100,10 @@ main{
         width: 100%;
         height: 500px;
     }
-    .sugerencias{
+ /*    .sugerencias{
         
         height: 800px;
-    }
+    } */
     .mensuales{
         height: 700px;
         flex-direction: row;
