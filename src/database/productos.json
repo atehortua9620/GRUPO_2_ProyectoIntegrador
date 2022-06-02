@@ -1,5 +1,6 @@
 [
     {
+        "id":"1",
         "title": " Reloj Tommy Hilfiger",
         "Genero":"hombre",
         "material": "Steel F20360/2",
@@ -9,8 +10,9 @@
         "categoria!": "empty"
     },
     {
+        "id":"2",
         "title": "Empty",
-        "Genero":"Empty",
+        "Genero":"empty",
         "material": "Empty",
         "image": "item2reco.png",
         "description": "empty",
@@ -18,6 +20,7 @@
         "categoria!": "empty"
     },
     {
+        "id":"3",
         "title": "Empty",
         "Genero":"Empty",
         "material": "Empty",
@@ -27,6 +30,7 @@
         "categoria!": "empty"
     },
     {
+        "id":"4",
         "title": "wall watch",
         "Genero":"Empty",
         "material": "Empty",
@@ -36,6 +40,7 @@
         "categoria!": "empty"
     },
     {
+        "id":"5",
         "title": "Empty",
         "Genero":"Empty",
         "material": "Empty",
@@ -45,6 +50,7 @@
         "categoria!": "empty"
     },
     {
+        "id":"6",
         "title": "Empty",
         "Genero":"Empty",
         "material": "Empty",
@@ -54,6 +60,7 @@
         "categoria!": "empty"
     },
     {
+        "id":"7",
         "title": "Empty",
         "Genero":"Empty",
         "material": "Empty",
@@ -63,6 +70,7 @@
         "categoria!": "empty"
     },
     {
+        "id":"8",
         "title": "Empty",
         "Genero":"Empty",
         "material": "Empty",

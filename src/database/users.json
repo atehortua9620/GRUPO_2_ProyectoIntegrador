@@ -1,0 +1,29 @@
+[
+    {
+        "id": "1",
+        "nombre":"Jorge Andres Atehortua Henao",
+        "nick":"Andres",
+        "mail": "andresatehortua@digitalhouse.com",
+        "pais":"Colombia",
+        "contraseña":"mipasswordAndres"
+        
+    },
+    {
+        "id": "2",
+        "nombre":"Leo",
+        "nick":"empty",
+        "mail": "empty",
+        "pais":"empty",
+        "contraseña":"empty"
+        
+    },
+    {
+        "id": "3",
+        "nombre":"Matias",
+        "nick":"empty",
+        "mail": "empty",
+        "pais":"empty",
+        "contraseña":"empty"
+        
+    }
+]

@@ -54,6 +54,7 @@ main{
     border-radius: 10px;
     border: solid black 2px;
     box-shadow: 5px 5px 10px;
+    margin:10px;
 }
 .sugerencia_item a button{
     border: black solid 1px;
