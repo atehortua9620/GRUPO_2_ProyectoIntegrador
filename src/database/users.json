@@ -10,11 +10,11 @@
     },
     {
         "id": "2",
-        "nombre":"Leo",
-        "nick":"empty",
-        "mail": "empty",
-        "pais":"empty",
-        "contraseña":"empty"
+        "nombre":"Leonardo Ezequiel Bellanza",
+        "nick":"Leo",
+        "mail": "leobellanz@gmail.com",
+        "pais":"Argentina",
+        "contraseña":"mipasswordLeo"
         
     },
     {
