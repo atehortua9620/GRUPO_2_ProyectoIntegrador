@@ -25,6 +25,7 @@
 -Matías Borysiuk:
         El compañero Matías Borysiuk manifiesta problemas familiares y el mismo aclaro esta situación por los canales oficiales de Digital House, por lo que su aporte al Sprint 2 fue a través de buscar y enviar imágenes para agregar al proyecto, en investigar las dudas y resoluciones que fueron surgiendo en el proyecto, o cuando nos reunimos en equipo el nos ayudaba a nosotros con el código y por estas razones el no efectúo commits en este Sprint 2.
 
+
 * Retrospectiva Sprint 2: 
 
 1. Comenzar a hacer:
@@ -42,6 +43,7 @@
 5. Dejar de hacer:
         Modificaciones al proyecto integrador los distintos integrantes del equipo sobre los mismos archivos para evitar conflictos al momento de subir los cambios a Github.
 
+
 * Retrospectiva Sprint 3: 
 
 1. Comenzar a hacer:
@@ -58,4 +60,3 @@
 
 5. Dejar de hacer:
         Dejamos de desarrollar sin prestar atencion, y leemos en nuestras reuniones semanales las pautas detenidamente, para primero poder comprenderlas, poner en practica lo aprendido en las clases y paso a paso ir resolviedo los ejercicios.
-        
