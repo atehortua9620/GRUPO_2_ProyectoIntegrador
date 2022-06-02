@@ -5,7 +5,8 @@
         "material": "Steel F20360/2",
         "image": "item1reco.png",
         "description": "Tommy Hilfiger - George 1710344 watch is one of the worlds most recognized lifestyle brands carrying the vision of classic American sportwear. The watch brand is no different with a clever sporty and casual look that appeals to everyone.",
-        "price": "USD 272,49"
+        "price": "USD 272,49",
+        "categoria!": "empty"
     },
     {
         "title": "Empty",
@@ -13,7 +14,8 @@
         "material": "Empty",
         "image": "item2reco.png",
         "description": "empty",
-        "price": "$$$"
+        "price": "$$$",
+        "categoria!": "empty"
     },
     {
         "title": "Empty",
@@ -21,15 +23,17 @@
         "material": "Empty",
         "image": "item3reco.png",
         "description": "empty",
-        "price": "$$$"
+        "price": "$$$",
+        "categoria!": "empty"
     },
     {
-        "title": "Empty",
+        "title": "wall watch",
         "Genero":"Empty",
         "material": "Empty",
         "image": "reloj-clasico.png",
         "description": "empty",
-        "price": "$$$"
+        "price": "23434234",
+        "categoria!": "empty"
     },
     {
         "title": "Empty",
@@ -37,7 +41,8 @@
         "material": "Empty",
         "image": "reloj-hombre.png",
         "description": "empty",
-        "price": "$$$"
+        "price": "$$$",
+        "categoria!": "empty"
     },
     {
         "title": "Empty",
@@ -45,7 +50,8 @@
         "material": "Empty",
         "image": "reloj-mujer.png",
         "description": "empty",
-        "price": "$$$"
+        "price": "$$$",
+        "categoria!": "empty"
     },
     {
         "title": "Empty",
@@ -53,7 +59,8 @@
         "material": "Empty",
         "image": "reloj-smart.png",
         "description": "empty",
-        "price": "$$$"
+        "price": "$$$",
+        "categoria!": "empty"
     },
     {
         "title": "Empty",
@@ -61,7 +68,8 @@
         "material": "Empty",
         "image": "reloj-sport.png",
         "description": "empty",
-        "price": "$$$"
+        "price": "$$$",
+        "categoria!": "empty"
     }
 
 ]
