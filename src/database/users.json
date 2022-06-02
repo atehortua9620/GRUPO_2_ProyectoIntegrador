@@ -19,11 +19,11 @@
     },
     {
         "id": "3",
-        "nombre":"Matias",
-        "nick":"empty",
-        "mail": "empty",
-        "pais":"empty",
-        "contraseña":"empty"
+        "nombre":"Matias Borysiuk",
+        "nick":"Mati",
+        "mail": "borysiukmatias@hotmail.com",
+        "pais":"Argentina",
+        "contraseña":"mipasswordMatias"
         
     }
 ]
