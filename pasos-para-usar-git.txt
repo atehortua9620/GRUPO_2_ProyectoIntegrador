@@ -1,0 +1,20 @@
+Para iniciar a trabajar:
+
+1 Debo actualizar mi local con lo que tengo en la rama master de la nube (github):
+
+Git pull < URL del PROYECTO>.
+
+con esto estoy actualizando la rama master de mi local.
+
+2. Para iniciar a trabajar de forma segura debo viajar a mi rama propia en mi local "Andres" "Leo" o "Matias" y actualizarlo
+con base a lo que tengo en mi master.
+Para actualizar una rama, me debo posicionar en la rama que quiero actualizar y hacer un merge y siguiente la rama con la cual
+auiero actualizar.
+
+>Estoy en master
+>Viajo a Matias:
+	git checkout Matias
+>Actualizo Matias con lo que tengo en master.
+	git merge master.
+
+Con los pasos anteriores ya tengo todas mis ramas del local actualizadas
