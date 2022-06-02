@@ -58,9 +58,13 @@
 
 5. Dejamos de desarrollar sin prestar atencion, y leemos en nuestras reuniones semanales las pautas detenidamente, para primero poder comprenderlas, poner en practica lo aprendido en las clases y paso a paso ir resolviedo los ejercicios.
 
- 
+
 =======
+ * Retrospectiva Sprint 2: 
 * Retrospectiva Sprint 2: 
+ * Retrospectiva Sprint 2: 
+* Retrospectiva Sprint 2: 
+ * Retrospectiva Sprint 2: 
 
 1. Comenzar a hacer:
          Reflexiones entre los distintos integrantes del equipo para conocer las opiniones de como ven el proyecto integrador en sus distintas etapas de desarrollo y que sentimientos le producen dicho proyecto poniendose del lado de los Usuarios.
@@ -76,4 +80,4 @@
 
 5. Dejar de hacer:
         Modificaciones al proyecto integrador los distintos integrantes del equipo sobre los mismos archivos para evitar conflictos al momento de subir los cambios a Github.
->>>>>>> ad7c64d1a401f84d998dd4f706a971b956025bd7
+
