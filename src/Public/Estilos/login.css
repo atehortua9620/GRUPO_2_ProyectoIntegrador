@@ -3,77 +3,42 @@
     padding: 0px;
 }
 
-@keyframes rotationlogo{
 
-    0%    { transform: rotate(0deg); }
-    10%   { transform: rotate(36deg);}
-    20%   { transform: rotate(72deg);} 
-    30%   { transform: rotate(108deg); }
-    40%   { transform: rotate(144deg); }
-    50%  { transform: rotate(180deg); }
-    60%   { transform: rotate(216deg);} 
-    70%   { transform: rotate(252deg); }
-    80%   { transform: rotate(288deg); }
-    90%   { transform: rotate(324deg); }
-    100%  { transform: rotate(360deg); }
-  }
-  footer img{
-    height: 150px;
-    animation: rotationlogo  10s infinite;
-}
-
-footer
-{
+main{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    /* border: solid rgb(192, 14, 14) 1px; */
-    width: 100%;
-    height: 500px;
+   align-items: center;
+    padding-top: 300px;
+    /* border:  solid red 1px; */
+}
     
-}
-.redes{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    /* border: solid green 1px; */
-    width: 90%;
-    height: 30px;
-}
-.redes i{
-    font-size: 30px;
-}
-footer button{
-    border: black solid 1px;
-    border-radius: 10px;
-    color: white;
-    height: 40px;
-    width: 80%;
-    font-family: 'roboto';
-    font-weight: bolder;
-    background: black;
-    box-shadow: inset 10px 5px 20px white;
-}
-
-footer button:hover{
-    cursor: pointer;
-    transition: 500ms;
-    background-color: gray;
-    color: black;
-}
 
 .formulario-login{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background: grey;
-    padding: 10px;
-    width: 40%;
-    font-family: 'roboto';
-    font-weight: bolder;
-    margin: auto;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    background-color: gray;
+    width: 50%;
+    height: 500px;
+    border-radius: 20px;
+    border: solid 3px black;
+  
+}
+
+.campos{
+    display: flex;
+    flex-direction:  column;
+    /* border: solid red 1px; */
+    align-items: center;
+    width: 100%;
+}
+
+.campos input{
+    width: 90%;
+    height: 30px;
+    border-radius: 10px;
 }
 
 .botonCreateAccount{
@@ -95,16 +60,14 @@ h1{
 /* desktop */
 
 @media(min-width:769px){
-    footer button{
-        width: 30%;
+
+    .campos{
+        width: 100%;
     }
-    .redes{
-        width: 30%;
+    .campos input{
+        width: 50%;
     }
-    footer img{
-        height: 200px;
    
-    }
     .botonCreateAccount{
         width: 100%;
         font-size:13px;

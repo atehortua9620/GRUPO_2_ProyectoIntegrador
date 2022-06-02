@@ -6,32 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/2946b0c24d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/Estilos/home.css">
-    <link rel="stylesheet" href="/Estilos/productDetail.css">
+
+    <link rel="stylesheet" href="/Estilos/styles.css">
     <link rel="stylesheet" href="/Estilos/login.css">
-    <link rel="stylesheet" href="/Estilos/productCart.css">
-    <link rel="stylesheet" href="/Estilos/register.css">
-    <link rel="stylesheet" href="/Estilos/createEditProduct.css">
+    <link rel="stylesheet" href="/Estilos/home.css">
+    
+   
 </head>
 <body>
     <%- include('./partials/menu') %>
+    
         <main>
         <h1>Login</h1>
-        <form action="/login" method="POST">
-            <div class="formulario-login">
+        <form class= 'formulario-login' action="/login" method="POST">
+            <div class="campos">
                 <label>Mail</label>
                 <input type="email" name="email" class="inputs">
             </div>
-            <div class="formulario-login">
+            <div class="campos">
                 <label>Password</label>
                 <input type="password" name="password" class="inputs">
             </div>
-            <div class="formulario-login">
+            <div class="campos">
             <label>Forgot your password</label>
                 <input type="email" name="forgot" class="inputs">
             </div>
             </form>
-            <div class="formulario-login">
+            <div class="campos">
                 <a href="/register"><button class="botonCreateAccount">I WOULD LIKE TO CREATE AN ACCOUNT!</button></a>
             </div>
     </main>

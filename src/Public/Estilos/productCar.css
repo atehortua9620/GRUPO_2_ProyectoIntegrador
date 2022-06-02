@@ -1,4 +1,7 @@
-
+*{
+    margin: 0px;
+    padding: 0px;
+}
 .main_carrito{
     padding-top: 15px;
     padding-top:200px;

@@ -1,0 +1,38 @@
+body{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bolder;
+    animation: 1s cambio  infinite;
+    
+}
+
+
+
+@keyframes miAnimacion /* Firefox */
+{
+from {left:290px;}
+to {left:1160px;}
+}
+
+@keyframes cambio /* Firefox */
+{
+from {color: black;}
+to {color: gray;}
+}
+
+
+.brillo{
+    position: absolute;
+    top: 160px;
+    left: 100px;
+    background-color:  white;
+    opacity: 0.6;
+    /* border: solid red 1px; */
+    width: 30px;
+    height: 55px;
+    animation: 2s miAnimacion infinite;
+}
