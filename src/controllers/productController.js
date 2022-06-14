@@ -17,9 +17,12 @@ const controller = {
         req.body.id = id;
         const nuevo ={
             ...req.body,
+            
+            
+
         
         }
-    
+        console.log(nuevo);
         
 
         res.redirect('/');
