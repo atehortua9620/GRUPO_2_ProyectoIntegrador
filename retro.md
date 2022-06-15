@@ -47,16 +47,16 @@
 * Retrospectiva Sprint 3: 
 
 1. Comenzar a hacer:
-        Mejoramos nuestros canales de comunicacion planificando de una a dos reuniones por semana sobre las tareas de los sprint.
+        Empezar a realizar pruebas de la aplicación web con usuarios reales (padre, madre, hijo, amigo, etc.) para recibir un feedback de la parte UX.
 
 2. Hacer más:
-        Siempre hacemos pruebas y muchas veces tenemos errores, pero cuando necesitamos ver algo en especifico lo resolvemos grupalmente.
+        Siempre hacemos pruebas y muchas veces tenemos errores, pero cuando necesitamos ver algo en específico lo resolvemos grupalmente.
 
 3. Continuar haciendo:
-        Tratamos de llevar un histograma de las pautas del sprint y si alguno tiene una duda, se habla en el canal de comunicacion de wassap y se aclaran las dudas. Siempre estamos apoyandonos entre nosotros, y si alguno no entiende algo esta el compañero para explicarlo.
+        Si alguno tiene una duda con lo establecido en el Sprint, se habla en el canal de comunicacion de WhatsApp y se aclaran las dudas. Siempre estamos apoyándonos entre nosotros, y si alguno no entiende algo esta el compañero para explicarlo.
         
 4. Hacer menos:
-        Tratamos de que nuestro enfoque sea dirigido a las tareas del sprint y no desviarnos tantos en detalles que atrasen las entregas de cada sprint.
+        Escribir mucho código cuando hay técnicas que permiten llegar al mismo resultando escribiendo menos código y permitiendo que el mismo sea más comprensible a los ojos de terceros.
 
 5. Dejar de hacer:
-        Dejamos de desarrollar sin prestar atencion, y leemos en nuestras reuniones semanales las pautas detenidamente, para primero poder comprenderlas, poner en practica lo aprendido en las clases y paso a paso ir resolviedo los ejercicios.
+        Apresurarnos en desarrollar sin prestar demasiada atención a lo que establecen las pautas del sprint, debiendo leer en nuestras reuniones semanales las pautas detenidamente, para primero poder comprenderlas, poner en práctica lo aprendido en las clases y paso a paso ir resolviendo los ejercicios.
