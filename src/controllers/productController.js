@@ -1,7 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 
-const  productos = JSON.parse(fs.readFileSync(path.join(__dirname, "../database/productos.json"),'utf-8'));
+const  filePath = path.join(__dirname, "../database/productos.json");
+
+const  productos = JSON.parse(fs.readFileSync(filePath,'utf-8'));
 
 const controller = {
     productDetail:(req,res)=>{
@@ -14,16 +16,19 @@ const controller = {
     procesandoData:(req, res)=>{
 
         let id = productos.length + 1;
-        req.body.id = id;
+        
         const nuevo ={
-            ...req.body,
-            
-            
-
-        
+            id: id,
+            title:req.body.title,
+            price: 'USD' + req.body.price,
+            categories: req.body.Categories,
+            description: req.body.description,
+            material: req.body.material,
+            image: req.file.filename,
         }
-        console.log(nuevo);
-        
+        productos.push(nuevo);
+
+        fs.writeFileSync(filePath, JSON.stringify(productos, null, "    "));
 
         res.redirect('/');
     }

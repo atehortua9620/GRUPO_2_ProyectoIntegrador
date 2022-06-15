@@ -23,10 +23,13 @@
             <div class="mensuales">
                 <% products.forEach(product=>{%>
                 <article class="sugerencia_item">
-                    <img src='/images/<%= product.image%>' alt="item">
                     <h3><%= product.title%></h3>
-                    <h4><%= product.price%></h4>
+                    <img src='/images/<%= product.image%>' alt="item">
                     <P><%= product.description%></P>
+                    <h4><%= product.material%></h4>
+                    <h4><%= product.categories%></h4>
+                    <h3><%= product.price%></h3>
+                    
                     <a class='linkitem'href="/product/detail"><button>PRODUCT DETAIL</button></a>
                 </article>
                 <% })%>
