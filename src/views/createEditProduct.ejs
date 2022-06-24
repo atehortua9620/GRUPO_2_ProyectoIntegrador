@@ -15,7 +15,7 @@
 <body>
     <%- include('./partials/menu') %>
     <main>
-        <h1>Create and Edit Products</h1>
+        <h1>Create, Edit and Delete Products</h1>
         <form action="/product/createEditProduct" method="POST" enctype="multipart/form-data">
             <div class="createEditProduct">
                 <label>Title </label>
@@ -66,10 +66,25 @@
             <button type ="submit" class="botonNewProduct">LOAD NEW PRODUCT</button>
         </div>
         </form>
-        <div class="boton-edit">
-            <button  class="edit">EDIT EXISTING PRODUCTS</button>
+        <div class="sugerencias">
+            <h2>LIST OF PRODUCTS</h2>
+            <div class="mensuales">
+                <% productos.forEach(product=>{%>
+                <article class="sugerencia_item">
+                    <h3><%= product.title%></h3>
+                    <img src='/images/<%= product.image%>' alt="item">
+                    <P><%= product.description%></P>
+                    <h4><%= product.material%></h4>
+                    <h4><%= product.categories%></h4>
+                    <h3><%= product.price%></h3>
+                    
+                    <a class='linkitem'href="/product/detail"><button>EDIT PRODUCT</button></a>
+                    <a class='linkitem'href="/product/detail"><button>DELETE PRODUCT</button></a>
+                </article>
+                <% })%>
+            </div>
         </div>
-    </main>
+        </main>
     <%- include('./partials/footer') %>
     </body>
 </html>

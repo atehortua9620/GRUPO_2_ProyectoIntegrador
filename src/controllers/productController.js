@@ -13,6 +13,9 @@ const controller = {
         res.render('./createEditProduct.ejs');
         
     },
+    createEditProduct: (req,res)=>{
+        res.render('./createEditProduct.ejs', {productos});
+    },
     procesandoData:(req, res)=>{
 
         let id = productos.length + 1;
