@@ -78,8 +78,8 @@
                     <h4><%= product.categories%></h4>
                     <h3><%= product.price%></h3>
                     
-                    <a class='linkitem'href="/product/detail"><button>EDIT PRODUCT</button></a>
-                    <a class='linkitem'href="/product/detail"><button>DELETE PRODUCT</button></a>
+                    <a class='linkitem'href="/product/createEditProduct/edit/<%= product.id %>"><button>EDIT PRODUCT</button></a>
+                    <a class='linkitem'href="/product/createEditProduct/delete/<%= product.id %>"><button>DELETE PRODUCT</button></a>
                 </article>
                 <% })%>
             </div>

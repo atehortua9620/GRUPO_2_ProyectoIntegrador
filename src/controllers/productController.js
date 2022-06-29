@@ -24,6 +24,18 @@ const controller = {
         res.render('./createEditProduct.ejs', {productos});
         
     },
+    eliminarProduct:(req, res)=>{
+        const productoElimarId = req.params.id;
+        
+        const eliminando = productos.filter((product)=>{
+           return product.id != productoElimarId;
+        });
+
+        fs.writeFileSync(filePath, JSON.stringify(eliminando, null, "    "));
+
+       res.send(eliminando)
+
+    },
    
     procesandoData:(req, res)=>{
 
