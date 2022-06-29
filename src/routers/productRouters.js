@@ -3,7 +3,7 @@ const router = express.Router();
 const multer = require('multer');
 const path = require('path');
 
-const {createEditProduct,procesandoData } = require('../controllers/productController');
+/* const {createEditProduct,procesandoData } = require('../controllers/productController'); */
 
 const productController = require('../controllers/productController');
 
@@ -21,10 +21,14 @@ const storage = multer.diskStorage({
 
 const uploadFile = multer({storage});
 
-
+/*Ruta principal de productos */
 router.get('/detail/:id',productController.productDetail);
-
+/*Ruta que envia el nuevo producto */
 router.get('/createEditProduct',productController.createEditProduct);
-router.post('/createEditProduct',uploadFile.single('image'), procesandoData);
+/*Ruta para procesar informacion del nuevo producto */
+router.post('/createEditProduct',uploadFile.single('image'),productController.procesandoData);
+/* Ruta que elimina el producto*/
+router.get('/createEditProduct/delete/:id',productController.eliminarProduct);
+
 
 module.exports = router;
