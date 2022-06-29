@@ -33,7 +33,7 @@ const controller = {
 
         fs.writeFileSync(filePath, JSON.stringify(eliminando, null, "    "));
 
-       res.send(eliminando)
+       res.redirect('/');
 
     },
    
