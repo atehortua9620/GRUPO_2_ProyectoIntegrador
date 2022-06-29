@@ -1,2 +1,4 @@
 * Sprint 4:
-He efectuado tests de funcionalidad de la página web con respecto a lo realizado hasta el momento del Sprint 4.
+- He efectuado tests de funcionalidad de la página web con respecto a lo realizado hasta el momento del Sprint 4.
+- Continuamos efectuando tests de funcionalidad con las últimas actualizaciones hasta el momento del Sprint 4.
+- Se procedió a actualizar el Trello del Grupo 2 del Proyecto Integrador.
