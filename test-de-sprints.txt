@@ -1,0 +1,2 @@
+* Sprint 4:
+He efectuado tests de funcionalidad de la página web con respecto a lo realizado hasta el momento del Sprint 4.
