@@ -86,7 +86,7 @@ const controller = {
 
         fs.writeFileSync(filePath, JSON.stringify(productos, null, "    "));
 
-        res.redirect(this.createEditProduct);
+        res.redirect('/');
     }
 }
 
