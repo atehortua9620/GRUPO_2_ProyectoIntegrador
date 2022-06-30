@@ -29,6 +29,9 @@ router.get('/createEditProduct',productController.createEditProduct);
 router.post('/createEditProduct',uploadFile.single('image'),productController.procesandoData);
 /* Ruta que elimina el producto*/
 router.get('/createEditProduct/delete/:id',productController.eliminarProduct);
+/*editar producto */
+router.put('/createEditProduct/edit/:id',uploadFile.single('image'), productController.update);
+router.get('/createEditProduct/edit/:id', productController.editar);
 
 
 module.exports = router;

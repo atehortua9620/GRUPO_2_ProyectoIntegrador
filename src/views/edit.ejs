@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/2946b0c24d.js" crossorigin="anonymous"></script>
+   
+    <link rel="stylesheet" href="/Estilos/productDetail.css">
+    <link rel="stylesheet" href="/Estilos/styles.css">
+    <link rel="stylesheet" href="/Estilos/home.css">
+    
+</head>
+<body>
+    <%- include('./partials/menu') %>
+
+    <main class="contenedorProductD">
+        <div class="mitadScreen uno">
+            <i class="fas fa-arrow-circle-left"></i>
+            <img src="/images/<%=filtrados.image%>" alt="">
+            <i class="fas fa-arrow-circle-right"></i>
+        </div>
+        <div class="mitadScreen dos">
+            <article class="relojClasico">
+                <form action="/product/createEditProduct/edit/<%=filtrados.id%>?_method=PUT" method="POST" enctype="multipart/form-data">
+                    <div class="createEditProduct">
+                        <label>Title </label>
+                        <input type="text" name="title" class="inputs" value="<%=filtrados.title%>">
+                    </div>
+                    <div class="createEditProduct">
+                        <label>Category </label>
+                        <select name="Categories" class="barraYlupa letra" value="<%=filtrados.categories%>>
+                            <option value="Categorias">Select</option>
+                            <option value="Clasicos">Clasicos</option>
+                            <option value="Smart">Smart</option>
+                            <option value="Sport">Sport</option>
+                            <option value="Hombre">Hombre</option>
+                            <option value="Mujer">Mujer</option>
+                        </select>
+                    </div>
+                    <div class="createEditProduct">
+                        <label>Material </label>
+                        <input type="text" name="material" class="inputs" value="<%=filtrados.material%>"">
+                    </div>
+        
+                    <div class="createEditProduct">
+                        <label for="image">Image </label>
+                        <input type="file" name="image" class="inputs" value="<%=filtrados.image%>">
+                    </div>
+        
+                    <div class="createEditProduct">
+                        <label>Description </label>
+                        <input name="description" class="inputs" value="<%=filtrados.description%>"></input>
+                    </div>
+                    <div class="createEditProduct">
+                        <label>Price </label>
+                        <input type="text" name="price" class="inputs" value="<%=filtrados.price%>">
+                    </div>
+        
+                    <div class="createEditProduct">
+                    <button type ="submit" class="botonNewProduct">UPDATE THIS PRODUCT</button>
+                </div>
+                <div class="createEditProduct">
+                    <a href="/" class="botonNewProduct">Regresar</a>
+                </div>
+                </form>
+        </div>
+    </main>
+    
+
+    <%- include('./partials/footer') %>
+    </body>
+</html>
