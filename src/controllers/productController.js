@@ -36,6 +36,38 @@ const controller = {
        res.redirect('/');
 
     },
+    editar: (req, res)=>{
+        id= req.params.id;
+        const filtrados = productos.find((product=> product.id == id));
+        if(!filtrados){
+            res.redirect('/');
+        }
+        else{
+        res.render('edit.ejs',{filtrados});
+        }
+       
+
+    },
+    update: (req, res)=>{
+        req.body.id = req.params.id;
+
+        req.body.image = req.file ? req.file.filename: 'default.png';
+
+        let productUpdated = productos.map((producto)=>{
+            if(producto.id == req.body.id){
+                return producto = req.body;
+            }
+            else{
+                return producto;
+            }
+        })
+
+        let actualizado = JSON.stringify(productUpdated, null, '  ');
+
+        fs.writeFileSync(filePath, actualizado);
+        res.redirect('/');
+
+    },
    
     procesandoData:(req, res)=>{
 
@@ -54,7 +86,7 @@ const controller = {
 
         fs.writeFileSync(filePath, JSON.stringify(productos, null, "    "));
 
-        res.redirect('/');
+        res.redirect(this.createEditProduct);
     }
 }
 
