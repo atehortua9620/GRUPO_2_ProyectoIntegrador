@@ -60,3 +60,21 @@
 
 5. Dejar de hacer:
         Apresurarnos en desarrollar sin prestar demasiada atención a lo que establecen las pautas del sprint, debiendo leer en nuestras reuniones semanales las pautas detenidamente, para primero poder comprenderlas, poner en práctica lo aprendido en las clases y paso a paso ir resolviendo los ejercicios.
+
+
+* Retrospectiva Sprint 4: 
+
+1. Comenzar a hacer:
+        Implementar en las reuniones un brainstorming, en la cual buscamos generar ideas de forma colaborativa y creativa con el objetivo de encontrar soluciones a problemas o situaciones produciendo la mayor cantidad de ideas posibles.
+
+2. Hacer más:
+        Lograr un objetivo propuesto escribiendo código de distintas maneras para adquirir práctica y analizar el código más óptimo.
+
+3. Continuar haciendo:
+        Seguir trabajando en equipo ya que los resultados se obtienen de forma eficiente.
+        
+4. Hacer menos:
+        De querer resolver todo nosotros sin buscar ayuda externa.
+
+5. Dejar de hacer:
+        Pensar en los sprints siguientes cuando se debe enfocar la atención total en el sprint actual ya que un desarrollo web lleva sus pasos para el logro del objetivo.
