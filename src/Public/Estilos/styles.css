@@ -5,7 +5,8 @@ header{
     align-items: center;
     width: 100%;
     height:  100px;
-    background-color: black;
+    background-color:#4b3621;
+    box-shadow: inset -5px 10px 50px black;
    /*  border: solid red 1px; */
 }
 .contenedorUno{
