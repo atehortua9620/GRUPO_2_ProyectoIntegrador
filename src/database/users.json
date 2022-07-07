@@ -1,29 +1,29 @@
 [
     {
         "id": "1",
-        "nombre":"Jorge Andres Atehortua Henao",
-        "nick":"Andres",
+        "nombre": "Jorge Andres Atehortua Henao",
+        "nick": "Andres",
         "mail": "andresatehortua@digitalhouse.com",
-        "pais":"Colombia",
-        "contraseña":"mipasswordAndres"
-        
+        "pais": "Colombia",
+        "contraseña": "mipasswordAndres",
+        "imagen": "image_user1657166020520.jpg"
     },
     {
         "id": "2",
-        "nombre":"Leonardo Ezequiel Bellanza",
-        "nick":"Leo",
+        "nombre": "Leonardo Ezequiel Bellanza",
+        "nick": "Leo",
         "mail": "leobellanz@gmail.com",
-        "pais":"Argentina",
-        "contraseña":"mipasswordLeo"
-        
+        "pais": "Argentina",
+        "contraseña": "mipasswordLeo",
+        "imagen": "default_user"
     },
     {
         "id": "3",
-        "nombre":"Matias Borysiuk",
-        "nick":"Mati",
+        "nombre": "Matias Borysiuk",
+        "nick": "Mati",
         "mail": "borysiukmatias@hotmail.com",
-        "pais":"Argentina",
-        "contraseña":"mipasswordMatias"
-        
+        "pais": "Argentina",
+        "contraseña": "mipasswordMatias",
+        "imagen": "default_user"
     }
 ]

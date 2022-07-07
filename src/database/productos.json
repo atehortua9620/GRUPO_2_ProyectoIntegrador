@@ -1,74 +1,74 @@
 [
-  {
-    "id": 1,
-    "title": "Tommy Hilfiger",
-    "categories": "Men",
-    "material": "Steel F20360/1",
-    "description": "Tommy Hilfiger-George 1710344 watch is one of the worlds most recognized lifestyle brands carrying the vision of classic American sportwear. The watch brand is no different with a clever sporty and casual look that appeals to everyone.",
-    "price": "USD 272,49",
-    "image": "item1reco.png"
-  },
-  {
-    "id": 2,
-    "title": "Rado ",
-    "categories": "Men",
-    "material": "Reinforced stainless steel",
-    "image": "item2reco.png",
-    "description": "Excellent antique original quartz needle clock",
-    "price": "USD 650,35"
-  },
-  {
-    "id": 3,
-    "title": "Casio Unlimited",
-    "categories": "Men",
-    "material": "Reinforced stainless steel and bathed in white gold",
-    "image": "item3reco.png",
-    "description": "Limited version of the best Casio watch, with a white gold plating on its mesh and a navy blue background, which enhances the beauty of the watch.",
-    "price": "USD 850,75"
-  },
-  {
-    "id": 4,
-    "title": "Wall Watch",
-    "categories": "Unisex",
-    "material": "Plastic",
-    "image": "reloj-clasico.png",
-    "description": "Modern Minimalist Large Classic Quartz Wall Clock",
-    "price": "USD 11,49"
-  },
-  {
-    "id": 5,
-    "title": "Festina",
-    "categories": "Men",
-    "material": "Steel F20360/2",
-    "image": "reloj-hombre.png",
-    "description": "Festina watches are the perfect blend of elegance and functionality. Festina offers distinguished designs, constant technological innovation and excellent value for money.",
-    "price": "USD 293,33"
-  },
-  {
-    "id": 6,
-    "title": "Orient",
-    "categories": "Woman",
-    "material": "Stainless steel",
-    "image": "reloj-mujer.png",
-    "description": "Beautiful women's watch that combines elegance and style",
-    "price": "USD 223,55"
-  },
-  {
-    "id": 7,
-    "title": "Generico",
-    "categories": "Unisex",
-    "material": "Silicone",
-    "image": "reloj-smart.png",
-    "description": "Smart Watch Running Cardio Pressure Oxygen Notifications",
-    "price": "USD 101,49"
-  },
-  {
-    "id": 8,
-    "title": "Huawei Watch 2 GT Pro Sport",
-    "categories": "Unisex",
-    "material": "Fluoroelastomer",
-    "image": "reloj-sport.png",
-    "description": "Huawei smartwatches stand out for their sophistication and classic aesthetics. Another point that stands out in the smartwatches of the Chinese brand is the durability of the battery, in addition to its sports and health control features.",
-    "price": "USD 367,25"
-  }
+    {
+        "id": 1,
+        "title": "Tommy Hilfiger",
+        "categories": "Men",
+        "material": "Steel F20360/1",
+        "description": "Tommy Hilfiger-George 1710344 watch is one of the worlds most recognized lifestyle brands carrying the vision of classic American sportwear. The watch brand is no different with a clever sporty and casual look that appeals to everyone.",
+        "price": "USD 272,49",
+        "image": "item1reco.png"
+    },
+    {
+        "id": 2,
+        "title": "Rado ",
+        "categories": "Men",
+        "material": "Reinforced stainless steel",
+        "image": "item2reco.png",
+        "description": "Excellent antique original quartz needle clock",
+        "price": "USD 650,35"
+    },
+    {
+        "id": 3,
+        "title": "Casio Unlimited",
+        "categories": "Men",
+        "material": "Reinforced stainless steel and bathed in white gold",
+        "image": "item3reco.png",
+        "description": "Limited version of the best Casio watch, with a white gold plating on its mesh and a navy blue background, which enhances the beauty of the watch.",
+        "price": "USD 850,75"
+    },
+    {
+        "id": 4,
+        "title": "Wall Watch",
+        "categories": "Unisex",
+        "material": "Plastic",
+        "image": "reloj-clasico.png",
+        "description": "Modern Minimalist Large Classic Quartz Wall Clock",
+        "price": "USD 11,49"
+    },
+    {
+        "id": 5,
+        "title": "Festina",
+        "categories": "Men",
+        "material": "Steel F20360/2",
+        "image": "reloj-hombre.png",
+        "description": "Festina watches are the perfect blend of elegance and functionality. Festina offers distinguished designs, constant technological innovation and excellent value for money.",
+        "price": "USD 293,33"
+    },
+    {
+        "id": 6,
+        "title": "Orient",
+        "categories": "Woman",
+        "material": "Stainless steel",
+        "image": "reloj-mujer.png",
+        "description": "Beautiful women's watch that combines elegance and style",
+        "price": "USD 223,55"
+    },
+    {
+        "id": 7,
+        "title": "Generico",
+        "categories": "Unisex",
+        "material": "Silicone",
+        "image": "reloj-smart.png",
+        "description": "Smart Watch Running Cardio Pressure Oxygen Notifications",
+        "price": "USD 101,49"
+    },
+    {
+        "id": 8,
+        "title": "Huawei Watch 2 GT Pro Sport",
+        "categories": "Unisex",
+        "material": "Fluoroelastomer",
+        "image": "reloj-sport.png",
+        "description": "Huawei smartwatches stand out for their sophistication and classic aesthetics. Another point that stands out in the smartwatches of the Chinese brand is the durability of the battery, in addition to its sports and health control features.",
+        "price": "USD 367,25"
+    }
 ]

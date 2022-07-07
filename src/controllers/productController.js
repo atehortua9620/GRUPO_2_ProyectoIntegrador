@@ -72,6 +72,13 @@ const controller = {
     procesandoData:(req, res)=>{
 
         let id = productos.length + 1;
+        let imagen = '';
+        if(!req.file){
+            imagen = 'default.png'
+        }
+        else{
+            imagen = req.file.filename;
+        }
         
         const nuevo ={
             id: id,
@@ -80,7 +87,7 @@ const controller = {
             categories: req.body.Categories,
             description: req.body.description,
             material: req.body.material,
-            image: req.file.filename,
+            image: imagen,
         }
         productos.push(nuevo);
 

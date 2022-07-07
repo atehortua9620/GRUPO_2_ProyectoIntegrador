@@ -13,13 +13,7 @@ const rutas ={
 
     productCar:(req,res)=>{
         res.render('./productcar.ejs');
-    },
-    register: (req,res)=>{
-        res.render('./register.ejs');
-    },
-    login: (req,res )=>{
-        res.render('./login.ejs');
-    }, 
+    }
     /* notFound: (req, res, next) =>{
         res.status(404).render('./not-found')
     } */

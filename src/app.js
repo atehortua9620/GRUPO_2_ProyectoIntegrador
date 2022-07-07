@@ -4,6 +4,7 @@ const methodOverride = require('method-override');
 
 const mainRouter = require('./routers/mainRouters')
 const productRouter = require('./routers/productRouters')
+const usersRoutes = require('./routers/usersRoutes')
 
 app.set('view engine', 'ejs');
 app.set  ('views', './src/views');
@@ -23,6 +24,7 @@ app.use(methodOverride('_method'));
 app.use(express.static('./src/Public'));
 app.use('/', mainRouter);
 app.use('/product', productRouter);
+app.use('/users',usersRoutes);
 
 /*linea para enviar pagina de error 404 not found */
 app.use((req, res, next) =>{

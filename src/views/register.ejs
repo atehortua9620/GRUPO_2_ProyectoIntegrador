@@ -17,18 +17,26 @@
     <%- include('./partials/menu') %>
     <main>
         <h1>Sign In</h1>
-        <form action="/register" method="POST">
+        <form action="/users/register" method="POST" enctype="multipart/form-data">
+            <div class="formulario-register">
+                <label for="avatar">please load your avatar</label>
+                <input type="file" name="avatar">
+            </div>
             <div class="formulario-register">
                 <label>Name </label>
                 <input type="text" name="nombre" class="inputs">
             </div>
             <div class="formulario-register">
-                <label>Last Name </label>
-                <input type="text" name="apellido" class="inputs">
+                <label>Nickname </label>
+                <input type="text" name="nickname" class="inputs">
             </div>
             <div class="formulario-register">
-                <label>Mail </label>
+                <label>E-mail </label>
                 <input type="email" name="email" class="inputs">
+            </div>
+            <div class="formulario-register">
+                <label>Country </label>
+                <input type="text" name="country" class="inputs">
             </div>
             <div class="formulario-register">
                 <label>Password </label>
@@ -39,11 +47,12 @@
                 <input type="password" name="forgot" class="inputs">
             </div>
             <div class="formulario-register">
-            <button type ="submit" class="botonSignIn">SIGN-IN</button>
-        </div>
+                <button type ="submit" class="botonSignIn">  SIGN-IN</button>
+             </div>
+            
         </form>
         <div class="boton-login">
-            <a href="/login"><button  class="login">I HAVE AN ACCOUNT</button></a>
+            <a href="/users/login"><button  class="login">I HAVE AN ACCOUNT</button></a>
         </div>
     </main>
     <%- include('./partials/footer') %>
