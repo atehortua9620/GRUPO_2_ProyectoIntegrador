@@ -12,14 +12,19 @@
     <title>Home</title>
 </head>
 <body>
-    <%- include('./partials/menu') %>
+    <%- include('./partials/menu',userlogged) %>
     <main>
         
         <div class="slider">
             <img src="/images/baner.png" alt="banner">
         </div>
         <div class="sugerencias">
-            <h2>MONTHLY SUGGESTIONS</h2>
+            <% if(userlogged != undefined){%>
+                <h2>Hello<br><%=userlogged.nombre %></br> there you have your</br> MONTHLY SUGGESTIONS </h2>
+                <%} else {%>
+                <h2>MONTHLY SUGGESTIONS</h2>
+                <%}%>
+            
             <div class="mensuales">
                 <% products.forEach(product=>{%>
                 <article class="sugerencia_item">

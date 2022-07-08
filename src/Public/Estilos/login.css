@@ -72,4 +72,14 @@ h1{
         width: 100%;
         font-size:13px;
     }
+    .login-cont{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+    }
+    .login{
+        width: 50%;
+        cursor: pointer;
+    }
 }

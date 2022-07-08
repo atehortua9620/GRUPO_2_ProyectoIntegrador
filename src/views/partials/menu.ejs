@@ -19,7 +19,11 @@
     <div class=" icons">
         <a href="/productCar"><i class="icon fas fa-cart-arrow-down"></i></a>
         <a href="/"><i class="icon fas fa-home"></i></a>
+        <%if(userlogged == undefined){%>
         <a href="/users/register"><i class="icon fas fa-user-circle"></i></a>
+        <%}else{%>
+            <img class="avatarImagen" src="/images/users/<%=userlogged.imagen%>" alt="usuario">
+            <%}%>
     </div>
     <i class=" burguer icon fas fa-bars"></i>
 </header>

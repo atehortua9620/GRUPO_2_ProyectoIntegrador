@@ -207,6 +207,10 @@ main button:hover{
     .logoMenu{
         height: 100%;
     }
+    .avatarImagen{
+        height: 75px;
+        border-radius: 100px;
+    }
 
     footer button{
         width: 30%;
