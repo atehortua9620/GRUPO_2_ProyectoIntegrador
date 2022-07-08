@@ -7,12 +7,13 @@ const products = JSON.parse(fs.readFileSync(productFilePath, 'utf-8'));
 
 const rutas ={
     home: (req,res)=>{
-        
-        res.render('./index.ejs', {products});
+        let userlogged = req.session.usuarioLogged;
+        res.render('./index.ejs', {products,userlogged});    
     },
 
     productCar:(req,res)=>{
-        res.render('./productcar.ejs');
+        let userlogged = req.session.usuarioLogged;
+        res.render('./productcar.ejs',userlogged);
     }
     /* notFound: (req, res, next) =>{
         res.status(404).render('./not-found')

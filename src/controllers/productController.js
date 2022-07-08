@@ -10,18 +10,20 @@ const controller = {
 
     productDetail:(req,res)=>{
         id= req.params.id;
+        let userlogged = req.session.usuarioLogged;
         const filtrados = productos.find((product=> product.id == id));
         if(!filtrados){
             res.redirect('/');
         }
         else{
-        res.render('./productDetail.ejs',{filtrados});
+        res.render('./productDetail.ejs',{filtrados,userlogged});
         }
   
     },
 
     createEditProduct: (req,res)=>{
-        res.render('./createEditProduct.ejs', {productos});
+        let userlogged = req.session.usuarioLogged;
+        res.render('./createEditProduct.ejs', {productos,userlogged});
         
     },
     eliminarProduct:(req, res)=>{
@@ -38,19 +40,20 @@ const controller = {
     },
     editar: (req, res)=>{
         id= req.params.id;
+        let userlogged = req.session.usuarioLogged;
         const filtrados = productos.find((product=> product.id == id));
         if(!filtrados){
             res.redirect('/');
         }
         else{
-        res.render('edit.ejs',{filtrados});
+        res.render('edit.ejs',{filtrados,userlogged});
         }
        
 
     },
     update: (req, res)=>{
         req.body.id = req.params.id;
-
+        
         req.body.image = req.file ? req.file.filename: 'default.png';
 
         let productUpdated = productos.map((producto)=>{

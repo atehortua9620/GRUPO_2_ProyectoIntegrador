@@ -6,7 +6,7 @@
         "mail": "andresatehortua@digitalhouse.com",
         "pais": "Colombia",
         "contraseña": "mipasswordAndres",
-        "imagen": "image_user1657166020520.jpg"
+        "imagen": "image_user1657166020520.png"
     },
     {
         "id": "2",
@@ -15,7 +15,7 @@
         "mail": "leobellanz@gmail.com",
         "pais": "Argentina",
         "contraseña": "mipasswordLeo",
-        "imagen": "default_user"
+        "imagen": "default-user.jpg"
     },
     {
         "id": "3",
@@ -24,6 +24,6 @@
         "mail": "borysiukmatias@hotmail.com",
         "pais": "Argentina",
         "contraseña": "mipasswordMatias",
-        "imagen": "default_user"
+        "imagen": "default-user,jpg"
     }
 ]

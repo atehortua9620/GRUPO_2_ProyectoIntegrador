@@ -14,11 +14,11 @@
    
 </head>
 <body>
-    <%- include('./partials/menu') %>
+    <%- include('./partials/menu',userlogged) %>
     
         <main>
         <h1>Login</h1>
-        <form class= 'formulario-login' action="/login" method="POST">
+        <form class= 'formulario-login' action="/users/login" method="POST" >
             <div class="campos">
                 <label>Mail</label>
                 <input type="email" name="email" class="inputs">
@@ -27,14 +27,14 @@
                 <label>Password</label>
                 <input type="password" name="password" class="inputs">
             </div>
-            <div class="campos">
+           <!--  <div class="campos">
             <label>Forgot your password</label>
                 <input type="email" name="forgot" class="inputs">
-            </div>
-            <a href="/"><button class="botonCreateAccount">Log-in</button></a>
+            </div> -->
+            <a href="/" class="login-cont"><button class="botonCreateAccount login">Log-in</button></a>
             </form>
             <div class="campos">
-                <a href="/users/register"><button class="botonCreateAccount">I WOULD LIKE TO CREATE AN ACCOUNT!</button></a>
+                <a href="/users/register" class="login-cont"><button class="botonCreateAccount login">I WOULD LIKE TO CREATE AN ACCOUNT!</button></a>
             </div>
     </main>
     <%- include('./partials/footer') %>

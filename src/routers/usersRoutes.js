@@ -24,5 +24,6 @@ const uploadFile = multer({storage});
 router.get('/register',usersController.register);
 router.post('/register',uploadFile.single('avatar'),usersController.registerManager)
 router.get('/login',usersController.login);
+router.post('/login',usersController.loginProcess);
 
 module.exports = router;

@@ -13,7 +13,7 @@
     
 </head>
 <body>
-    <%- include('./partials/menu') %>
+    <%- include('./partials/menu',userlogged) %>
     <main>
         <h1>Create, Edit and Delete Products</h1>
         <form action="/product/createEditProduct" method="POST" enctype="multipart/form-data">

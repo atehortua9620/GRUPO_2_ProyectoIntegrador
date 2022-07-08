@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express ();
 const methodOverride = require('method-override');
+const session = require('express-session');
 
 const mainRouter = require('./routers/mainRouters')
 const productRouter = require('./routers/productRouters')
@@ -18,6 +19,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 /*Linea para trabajar con libreria method over ride (librerira para usar PUT y DELETE) */
 app.use(methodOverride('_method'));
+app.use(session({secret: 'shh, its a secret'}));
 
 
 
