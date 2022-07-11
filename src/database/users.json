@@ -25,5 +25,14 @@
         "pais": "Argentina",
         "contraseña": "mipasswordMatias",
         "imagen": "default-user,jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Andres Atehortua Henao",
+        "nick": "",
+        "mail": "atehortua9620@gmail.com",
+        "pais": "Colombia",
+        "contraseña": "$2a$10$zRW4d/zj/U9AkpubNhz54uZMzrqajbSK3Hdxb.3SL76Fxwjzhbh3.",
+        "imagen": "default-user.jpg"
     }
 ]

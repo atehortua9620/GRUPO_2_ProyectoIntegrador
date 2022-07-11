@@ -6,6 +6,9 @@ const path = require('path');
 
 
 const usersController = require('../controllers/usersController');
+/*requiriendo midleware de negacion de ruta loggin */
+const negacion = require('../midelwares/logindenied');
+
 
 const storage = multer.diskStorage({
     destination: (req, file, cb)=>{
@@ -21,9 +24,9 @@ const storage = multer.diskStorage({
 
 const uploadFile = multer({storage});
 
-router.get('/register',usersController.register);
+router.get('/register',negacion,usersController.register);
 router.post('/register',uploadFile.single('avatar'),usersController.registerManager)
-router.get('/login',usersController.login);
+router.get('/login',negacion,usersController.login);
 router.post('/login',usersController.loginProcess);
 
 module.exports = router;

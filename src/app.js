@@ -7,6 +7,7 @@ const mainRouter = require('./routers/mainRouters')
 const productRouter = require('./routers/productRouters')
 const usersRoutes = require('./routers/usersRoutes')
 
+
 app.set('view engine', 'ejs');
 app.set  ('views', './src/views');
 
@@ -20,6 +21,8 @@ app.use(express.urlencoded({extended: false}));
 /*Linea para trabajar con libreria method over ride (librerira para usar PUT y DELETE) */
 app.use(methodOverride('_method'));
 app.use(session({secret: 'shh, its a secret'}));
+
+
 
 
 
