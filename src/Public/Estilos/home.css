@@ -6,6 +6,7 @@
 body{
     
     width: 100%;
+    
   
 }
 .letra{
@@ -24,11 +25,12 @@ main{
 }
 .sugerencias{
     width: 100%;
+    background-color: #4b3621;
     /* border: solid red 1px; */
 }
 .sugerencias h2{
     font-family: 'roboto';
-    color: gray;
+    color: white;
     text-align: center;
     margin-top: 25px;
     /* border: solid blue 1px; */
@@ -39,6 +41,7 @@ main{
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
+   
     width: 100%;
    
     /* border: solid green 1px; */
@@ -54,7 +57,10 @@ main{
     height: 550px;
     border-radius: 10px;
     border: solid black 2px;
+    background-color: white;
     box-shadow: 5px 5px 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin:10px;
 }
 .sugerencia_item a button{
@@ -109,16 +115,21 @@ main{
      .sugerencias{
         
         margin-top:160px;
+        box-shadow: inset 5px 5px 50px black;
     }
     .mensuales{
        
         flex-direction: row;
         flex-wrap: wrap;
-        background-color: white;
+        background-color: #4b3621;
+        box-shadow: inset 5px -10px 50px black;
     }
  
     .sugerencia_item{
         width: 25%;
+        background-color: white;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .sugerencias h2{
         font-size: 40px;

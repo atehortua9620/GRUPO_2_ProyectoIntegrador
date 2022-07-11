@@ -14,12 +14,15 @@ main{
     
 
 .formulario-login{
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
     align-items: center;
-    background-color: gray;
+    background: #4b3621;
+    color: white;
+    box-shadow: inset 5px -10px 50px black;
     width: 50%;
     height: 500px;
     border-radius: 20px;

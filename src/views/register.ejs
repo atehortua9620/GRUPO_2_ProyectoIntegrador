@@ -16,37 +16,39 @@
 <body>
     <%- include('./partials/menu',userlogged) %>
     <main>
-        <h1>Sign In</h1>
-        <form action="/users/register" method="POST" enctype="multipart/form-data">
-            <div class="formulario-register">
-                <label for="avatar">please load your avatar</label>
-                <input type="file" name="avatar">
-            </div>
-            <div class="formulario-register">
+        
+        <form class="formulario-register" action="/users/register" method="POST" enctype="multipart/form-data">
+            <h1>Please let us know about you</h1>
+            
+            <div class="columna" >
                 <label>Name </label>
-                <input type="text" name="nombre" class="inputs">
+                <input class="inputs" type="text" name="nombre" class="inputs">
             </div>
-            <div class="formulario-register">
+            <div class="columna" >
                 <label>Nickname </label>
-                <input type="text" name="nickname" class="inputs">
+                <input class="inputs" type="text" name="nickname" class="inputs">
             </div>
-            <div class="formulario-register">
+            <div class="columna" >
                 <label>E-mail </label>
-                <input type="email" name="email" class="inputs">
+                <input class="inputs" type="email" name="email" class="inputs">
             </div>
-            <div class="formulario-register">
+            <div class="columna" >
                 <label>Country </label>
-                <input type="text" name="country" class="inputs">
+                <input class="inputs" type="text" name="country" class="inputs">
             </div>
-            <div class="formulario-register">
+            <div class="columna" >
                 <label>Password </label>
-                <input type="password" name="password" class="inputs">
+                <input class="inputs" type="password" name="password" class="inputs">
             </div>
-            <div class="formulario-register">
+            <div class="columna" >
             <label>Confirm your password </label>
-                <input type="password" name="forgot" class="inputs">
+                <input class="inputs" type="password" name="forgot" class="inputs">
             </div>
-            <div class="formulario-register">
+            <div class="columna" >
+                <label for="avatar">please load your avatar</label>
+                <input class="inputs" type="file" name="avatar">
+            </div>
+            <div class="columna">
                 <button type ="submit" class="botonSignIn">  SIGN-IN</button>
              </div>
             
