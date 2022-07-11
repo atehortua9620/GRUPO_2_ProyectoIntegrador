@@ -13,7 +13,7 @@ const rutas ={
 
     productCar:(req,res)=>{
         let userlogged = req.session.usuarioLogged;
-        res.render('./productcar.ejs',userlogged);
+        res.render('./productcar.ejs',{userlogged});
     }
     /* notFound: (req, res, next) =>{
         res.status(404).render('./not-found')
