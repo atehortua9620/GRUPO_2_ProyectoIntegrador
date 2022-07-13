@@ -7,3 +7,5 @@
 
 * Sprint 5:
 - Se procedió a actualizar el Trello del Grupo 2 del Proyecto Integrador.
+- Se trabajo en la modalidad pair programming con el formulario de registro.
+- Se hizo test de funcionalidad final de todo lo solicitado en el Sprint 5.
