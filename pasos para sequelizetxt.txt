@@ -1,0 +1,18 @@
+Pass para iniciar con sequielize
+1 crear el archivo .sequelizerc
+2 configurar el archivo:
+
+	const path = require('path');
+
+	module.exports =  {
+    		config: path.resolve('./src/database/config', 'config.js'),
+    		'models-path': path.resolve('./src/database/models'),
+    		'seeders-path': path.resolve('./src/database/seeders'),
+    		'migrations-path': path.resolve('./src/database/migrations'),
+}
+
+3. inicializar sequelize con "npx siquelize-cli init", ahi se van a crear
+los archivos necesarios para operar con sequelize.
+
+4. hacer npm i dotenv
+5. crear archivo .env en src "este no se puede subir al repo"
