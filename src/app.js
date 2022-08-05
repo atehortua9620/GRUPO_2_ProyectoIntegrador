@@ -1,3 +1,4 @@
+let path = require('path');
 const express = require('express');
 const app = express ();
 const methodOverride = require('method-override');
@@ -10,6 +11,7 @@ const usersRoutes = require('./routers/usersRoutes')
 
 app.set('view engine', 'ejs');
 app.set  ('views', './src/views');
+app.use(express.static(path.join(__dirname, '../public')));
 
 const port = process.env.PORT || 3000;
 app.listen(port,()=>console.log('server corriendo en el puerto'+port));
