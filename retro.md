@@ -78,3 +78,21 @@
 
 5. Dejar de hacer:
         Pensar en los sprints siguientes cuando se debe enfocar la atención total en el sprint actual ya que un desarrollo web lleva sus pasos para el logro del objetivo.
+
+
+* Retrospectiva Sprint 5: 
+
+1. Comenzar a hacer:
+        Un resumen de todo lo aprendido hasta el momento en el proyecto integrador que incluya sugerencias de como proceder en un desarrollo web, advertencias de lo que no hay que hacer para evitar conflictos en el código y un listado con distintas herramientas útiles obtenidas de internet que incluya distintos comandos que agilicen el trabajo diario de todo programador.  
+
+2. Hacer más:
+       Tests de funcionalidad para revisar la integridad del desarrollo web efectuado hasta el momento.
+
+3. Continuar haciendo:
+       Trabajar en la modalidad pair programming para obtener mayor aprendizaje y resultados.
+        
+4. Hacer menos:
+        De querer saltear el plan de pasos acordado en el equipo de trabajo que permiten lograr un desarrollo web en tiempo y forma.
+
+5. Dejar de hacer:
+        Pensar solamente en el corto plazo a la hora de encarar un desarrollo web.
