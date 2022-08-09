@@ -12,7 +12,7 @@ const negacion = require('../midelwares/logindenied');
 
 const storage = multer.diskStorage({
     destination: (req, file, cb)=>{
-        cb(null, path.join(__dirname,'../public/images/users'));
+        cb(null, path.join(__dirname,'../../public/images/users'));
     },
     filename: (req, file, cb)=>{
         

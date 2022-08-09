@@ -57,6 +57,7 @@ const controladorUsers  = {
                 if(bcrypt.compare(usuario2Log.contraseña,usuario.contraseña)){
                     console.log('hola'+' '+usuario.nombre+' '+'te encontré');
                     req.session.usuarioLogged = usuario;
+                    console.log(req.session.userlogged)
                     res.redirect('/');
                 }
             }
