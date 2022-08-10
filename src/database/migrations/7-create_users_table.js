@@ -8,7 +8,7 @@ module.exports = {
      * Example:
      * await queryInterface.createTable('users', { id: Sequelize.INTEGER });
      */
-     await queryInterface.createTable('products', { 
+     await queryInterface.createTable('users', { 
       id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
@@ -18,35 +18,40 @@ module.exports = {
         type: Sequelize.STRING(255),
         allowNull: false
       },
-      description:{
-        type: Sequelize.TEXT,
+      nick:{
+        type: Sequelize.STRING(255),
         allowNull: false
       },
-      price:{
-        type: Sequelize.DECIMAL(12,2),
+      email:{
+        type: Sequelize.STRING(255),
         allowNull: false
       },
-      materials_id: {
+      password:{
+        type: Sequelize.STRING(255),
+        allowNull: false
+      },
+      imagen:{
+        type: Sequelize.STRING(255),
+      },
+      countries_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {
-          model: {
-          tablename: 'materials'
+          model: 'countries',
+          key: 'id'
         },
-        key: 'id'
-      }
+        
     },
-    categories_id: {
+    roles_id: {
       type: Sequelize.INTEGER,
       allowNull: false,
       references: {
-        model: {
-        tablename: 'categories'
+        model: 'roles',
+        key: 'id'
       },
-      key: 'id'
-    },
-  },
-   });
+      
+    }
+    });
   },
 
   async down (queryInterface, Sequelize) {
@@ -56,6 +61,6 @@ module.exports = {
      * Example:
      * await queryInterface.dropTable('users');
      */
-     await queryInterface.dropTable('products');
+     await queryInterface.dropTable('users');
   }
 };

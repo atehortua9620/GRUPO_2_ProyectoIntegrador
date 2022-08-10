@@ -22,12 +22,12 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {
-          model: {
-          tablename: 'products'
+          model: 'products',
+          key: 'id'
         },
-        key: 'id'
+      
       }
-    },
+    
     });
   },
 
