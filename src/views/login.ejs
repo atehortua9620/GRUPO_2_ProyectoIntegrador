@@ -17,16 +17,24 @@
     <%- include('./partials/menu',userlogged) %>
     
         <main>
-        
+            <div class="errores" >
+                <ul></ul>
+                </div>
         <form class= 'formulario-login' action="/users/login" method="POST" >
             <h1>Login</h1>
             <div class="campos">
                 <label>Mail</label>
-                <input type="email" name="email" class="inputs">
+                <input type="email" name="email" class="inputs" class="mail" value="<%=locals.old ? old.email : null %>">
+                <% if (locals.errors && errors.email ) { %>
+                    <div class = "feedback" > <%= errors.email.msg%> </div>
+                    <% } %>
             </div>
             <div class="campos">
                 <label>Password</label>
-                <input type="password" name="password" class="inputs">
+                <input type="password" name="password" class="inputs" class="pass" value="<%=locals.old ? old.password : null %>">
+                <% if (locals.errors && errors.password ) { %>
+                    <div class = "feedback" > <%= errors.password.msg%> </div>
+                    <% } %>
             </div>
            <!--  <div class="campos">
             <label>Forgot your password</label>

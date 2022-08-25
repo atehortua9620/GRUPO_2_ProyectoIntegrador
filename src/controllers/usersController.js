@@ -1,3 +1,4 @@
+const { validationResult } = require ( 'express-validator' );
 const path = require('path');
 const fs = require('fs');
 const bcrypt = require('bcryptjs');
@@ -16,7 +17,7 @@ const controladorUsers  = {
         res.render('./register.ejs',{userlogged});
     },
     registerManager: (req, res)=>{
-
+       
         let id = users.length+1;
         let pssw= bcrypt.hashSync(req.body.password, 10);
         let imagen = '';
@@ -26,7 +27,8 @@ const controladorUsers  = {
         else{
             imagen = req.file.filename;
         }
-
+    
+    
 
         let nuevoUsuario = {
             id: id,
@@ -70,5 +72,6 @@ const controladorUsers  = {
         }
     }
 }
+
 
 module.exports = controladorUsers;
