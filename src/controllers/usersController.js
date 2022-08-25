@@ -1,15 +1,18 @@
 const path = require('path');
 const fs = require('fs');
 const bcrypt = require('bcryptjs');
+/* const db = require('../database/models') */
 
 const usersFilePath = path.join(__dirname, '../database/users.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath,'utf-8'));
 const productFilePath = path.join(__dirname, '../database/productos.json');
 const products = JSON.parse(fs.readFileSync(productFilePath, 'utf-8'));
 
+
 const controladorUsers  = {
     register: (req,res)=>{
         let userlogged = req.session.usuarioLogged;
+        
         res.render('./register.ejs',{userlogged});
     },
     registerManager: (req, res)=>{
