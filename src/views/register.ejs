@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/2946b0c24d.js" crossorigin="anonymous"></script>
-
+    
     
     <link rel="stylesheet" href="/Estilos/register.css">
    <link rel="stylesheet" href="/Estilos/styles.css">
@@ -16,37 +16,60 @@
 <body>
     <%- include('./partials/menu',userlogged) %>
     <main>
-        
+        <div class="errores" >
+        <ul></ul>
+        </div>
         <form class="formulario-register" action="/users/register" method="POST" enctype="multipart/form-data">
             <h1>Please let us know about you</h1>
             
             <div class="columna" >
                 <label>Name </label>
-                <input class="inputs" type="text" name="nombre" class="inputs">
+                <input class="inputs name" id="name" type="text" name="nombre" value="<%=locals.old ? old.nombre : null %>">
+                <% if (locals.errors && errors.nombre ) { %>
+                    <div class = "feedback" > <%= errors.nombre.msg%> </div>
+                    <% } %>
             </div>
             <div class="columna" >
                 <label>Nickname </label>
-                <input class="inputs" type="text" name="nickname" class="inputs">
+                <input class="inputs" type="text" name="nickname" class="nick" value="<%=locals.old ? old.nickname : null %>">
+                <% if (locals.errors && errors.nickname ) { %>
+                    <div class = "feedback" > <%= errors.nickname.msg%> </div>
+                    <% } %>
             </div>
             <div class="columna" >
                 <label>E-mail </label>
-                <input class="inputs" type="email" name="email" class="inputs">
+                <input class="inputs" type="email" name="email" class="mail" value="<%=locals.old ? old.email : null %>">
+                <% if (locals.errors && errors.email ) { %>
+                    <div class = "feedback" > <%= errors.email.msg%> </div>
+                    <% } %>
             </div>
             <div class="columna" >
                 <label>Country </label>
-                <input class="inputs" type="text" name="country" class="inputs">
+                <input class="inputs" type="text" name="country" class="count" value="<%=locals.old ? old.country : null %>">
+                <% if (locals.errors && errors.country ) { %>
+                    <div class = "feedback" > <%= errors.country.msg%> </div>
+                    <% } %>
             </div>
             <div class="columna" >
                 <label>Password </label>
-                <input class="inputs" type="password" name="password" class="inputs">
+                <input class="inputs" type="password" name="password" class="pass" value="<%=locals.old ? old.password : null %>">
+                <% if (locals.errors && errors.password ) { %>
+                    <div class = "feedback" > <%= errors.password.msg%> </div>
+                    <% } %>
             </div>
             <div class="columna" >
             <label>Confirm your password </label>
-                <input class="inputs" type="password" name="forgot" class="inputs">
+                <input class="inputs" type="password" name="forgot" class="confirm" value="<%=locals.old ? old.forgot : null %>">
+                <% if (locals.errors && errors.forgot ) { %>
+                    <div class = "feedback" > <%= errors.forgot.msg%> </div>
+                    <% } %>
             </div>
             <div class="columna" >
                 <label for="avatar">please load your avatar</label>
-                <input class="inputs" type="file" name="avatar">
+                <input class="inputs" type="file" name="avatar" class="ava">
+                <% if (locals.errors && errors.avatar ) { %>
+                    <div class = "feedback" > <%= errors.avatar.msg%> </div>
+                    <% } %>
             </div>
             <div class="columna">
                 <button type ="submit" class="botonSignIn">  SIGN-IN</button>
@@ -58,5 +81,6 @@
         </div>
     </main>
     <%- include('./partials/footer') %>
+    <script src="/validacionesJs/registerValidator.js"></script>
     </body>
 </html>
