@@ -25,5 +25,86 @@
         "pais": "Argentina",
         "contraseña": "mipasswordMatias",
         "imagen": "default-user,jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "",
+        "nick": "",
+        "mail": "",
+        "pais": "",
+        "contraseña": "$2a$10$Dm5edXH2c3OYS54KXXEbz.dBNQKkK7FsCOcyELPJ.z/3vYivN1WqG",
+        "imagen": "default-user.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "",
+        "nick": "",
+        "mail": "",
+        "pais": "",
+        "contraseña": "$2a$10$jMd/zgpQrGzrnmPMgeVeT.P0q8P4TGDZ9eN/I2N8/Td1wU43B8tuW",
+        "imagen": "default-user.jpg"
+    },
+    {
+        "id": 6,
+        "nombre": "",
+        "nick": "",
+        "mail": "",
+        "pais": "",
+        "contraseña": "$2a$10$N7EWWx8HdDgjV/gb8D0dP.QKVR9v2lrcjxmidj0RP6zxizsFLB8Ba",
+        "imagen": "default-user.jpg"
+    },
+    {
+        "id": 7,
+        "nombre": "",
+        "nick": "",
+        "mail": "",
+        "pais": "",
+        "contraseña": "$2a$10$qaROrWP2.rLUFewUxZw3QOZC3QhnwU6IYdZ1LbHh7hF2P7pcTv9e2",
+        "imagen": "default-user.jpg"
+    },
+    {
+        "id": 8,
+        "nombre": "",
+        "nick": "",
+        "mail": "",
+        "pais": "",
+        "contraseña": "$2a$10$qdy0pV6ZzBTTbypEIAJS3uo/w3iI.mFjxa3pip8xDfIAdrScs2UY.",
+        "imagen": "default-user.jpg"
+    },
+    {
+        "id": 9,
+        "nombre": "",
+        "nick": "",
+        "mail": "",
+        "pais": "",
+        "contraseña": "$2a$10$80k/NJm3x6EbClJuiF5Bo.jD0vz684ZeWNZECKl5iWM8/wiFUtpsm",
+        "imagen": "default-user.jpg"
+    },
+    {
+        "id": 10,
+        "nombre": "andres",
+        "nick": "andres",
+        "mail": "",
+        "pais": "",
+        "contraseña": "$2a$10$Qhwcp4kuYIC7Hp6Rn3ASl.5FAAmmvsuHBAXdTKJBr0977O27FPROO",
+        "imagen": "default-user.jpg"
+    },
+    {
+        "id": 11,
+        "nombre": "andres",
+        "nick": "andres",
+        "mail": "",
+        "pais": "",
+        "contraseña": "$2a$10$y636s.1dEf5WsbrRxztHPu4omEHNo/lWwchkH7NdZ3bcu9duW768.",
+        "imagen": "default-user.jpg"
+    },
+    {
+        "id": 12,
+        "nombre": "",
+        "nick": "",
+        "mail": "",
+        "pais": "[object Object]",
+        "contraseña": "$2a$10$Fu3yZMHbAriVhoeTO358xujwvSHYPufLrcpQpQbtMvfQ8nmSMW1XW",
+        "imagen": "default-user.jpg"
     }
 ]

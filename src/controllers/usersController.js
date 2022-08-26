@@ -8,13 +8,13 @@ const usersFilePath = path.join(__dirname, '../database/users.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath,'utf-8'));
 const productFilePath = path.join(__dirname, '../database/productos.json');
 const products = JSON.parse(fs.readFileSync(productFilePath, 'utf-8'));
-
+const countries = JSON.parse(fs.readFileSync(path.join(__dirname,'../database/countries.json')),'utf-8')
 
 const controladorUsers  = {
     register: (req,res)=>{
         let userlogged = req.session.usuarioLogged;
         
-        res.render('./register.ejs',{userlogged});
+        res.render('./register.ejs',{userlogged,countries});
     },
     registerManager: (req, res)=>{
        

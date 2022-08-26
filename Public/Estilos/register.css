@@ -63,6 +63,18 @@ footer button:hover{
     background-color: gray;
     color: black;
 }
+.errores{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bolder;
+    
+}
+
+ul{
+    list-style-type: none;
+}
 
 .formulario-register{
     display: flex;

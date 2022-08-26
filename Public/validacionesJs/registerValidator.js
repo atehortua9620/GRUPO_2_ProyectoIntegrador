@@ -6,53 +6,48 @@ window.addEventListener('load', function () {
       let errores = [];
   
       let campoNombre = document.querySelector("#name");
+      let campoNickName = document.querySelector("#nick");
+      let campoEmail = document.querySelector("#mail");
+      let campoCountry = document.querySelector("#countrie");
+      let campoPassword = document.querySelector("#pass");
+      let campoConfirmYourPassword = document.querySelector("#confirm");
+      let specialCharacters = ['.','-','@','*']
+      let passwordValidation = [];
+
       if (campoNombre.value.length < 2) {
-        errores.push("El campo nombre necesita dos caracteres");
-      }
-
-    /* let campoNickName = document.querySelector("input.nick");
-      if (campoNickName.value == "") {
-        errores.push("El campo nickname está vacío");
-      } else if (campoNickName.value.length < 2) {
-        errores.push("El campo nickname debe tener al menos 2 caracteres");
-    }
-
-    let campoEmail = document.querySelector("input.mail");
-      if (campoEmail.value == "") {
-        errores.push("El campo email está vacío");
-      } else if (campoEmail.value.length < 2) {
-        errores.push("El campo email debe tener al menos 2 caracteres");
-    }
-
-    let campoCountry = document.querySelector("input.count");
-      if (campoCountry.value == "") {
-        errores.push("El campo country está vacío");
-      } else if (campoCountry.value.length < 2) {
-        errores.push("El campo country debe tener al menos 2 caracteres");
-    }
+        errores.push("your name must has two characters or upper to be valid");
       
-    let campoPassword = document.querySelector("input.pass");
-      if (campoPassword.value == "") {
-        errores.push("El campo password está vacío");
-      } else if (campoPassword.value.length < 8) {
-        errores.push("El campo password debe tener al menos 8 caracteres");
+      }
+      if (campoNickName.value.length == "") {
+        errores.push("The nickname field is empty, if you don't have any nickname, please enter your real name");
+      }
+    
+      if (campoEmail.value == "") {
+        errores.push("Email field is empty, please fill");
+      } else if (!campoEmail.value.includes('@')) {
+        errores.push("Please use the basic structure for email field");
+    }
+
+    if (campoCountry.value == 0) {
+      errores.push("please select your countrie");
+    }
+    if (campoPassword.value == "") {
+      errores.push("please setup your password");
+    } else if (campoPassword.value.length < 8) {
+      errores.push("your password lenght must be 8 or upper");
+    }
+    if(campoConfirmYourPassword.value !=campoPassword.value){
+    errores.push('sorry we found some differences in your password confirmation')
+    }
+    if(campoConfirmYourPassword.value == ''){
+    errores.push('please confirm your password')
     }
   
-    let campoConfirmYourPassword = document.querySelector("input.confirm");
-    if (campoConfirmYourPassword.value == "") {
-      errores.push("El campo confirmYourPassword está vacío");
-    } else if (campoConfirmYourPassword.value.length < 8) {
-      errores.push("El campo password debe tener al menos 8 caracteres");
-  }
 
-  let campoAvatar = document.querySelector("input.ava");
-    if (campoAvatar.value == "") {
-      errores.push("El campo avatar está vacío");
-    } */
-
-    if(errores.length >= 0){
+    if(errores.length > 0){
   
         e.preventDefault();
+        alert("sorry we've found some errors in your registration");
 
     let UlErrores = document.querySelector("div.errores ul");
     for (let i = 0; i < errores.length; i++ ) {

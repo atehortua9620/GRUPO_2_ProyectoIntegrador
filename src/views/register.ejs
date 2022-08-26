@@ -16,9 +16,7 @@
 <body>
     <%- include('./partials/menu',userlogged) %>
     <main>
-        <div class="errores" >
-        <ul></ul>
-        </div>
+        
         <form class="formulario-register" action="/users/register" method="POST" enctype="multipart/form-data">
             <h1>Please let us know about you</h1>
             
@@ -31,35 +29,39 @@
             </div>
             <div class="columna" >
                 <label>Nickname </label>
-                <input class="inputs" type="text" name="nickname" class="nick" value="<%=locals.old ? old.nickname : null %>">
+                <input class="inputs nick" id='nick'type="text" name="nickname" value="<%=locals.old ? old.nickname : null %>">
                 <% if (locals.errors && errors.nickname ) { %>
                     <div class = "feedback" > <%= errors.nickname.msg%> </div>
                     <% } %>
             </div>
             <div class="columna" >
                 <label>E-mail </label>
-                <input class="inputs" type="email" name="email" class="mail" value="<%=locals.old ? old.email : null %>">
+                <input class="inputs mail" id="mail" type="email" name="email" value="<%=locals.old ? old.email : null %>">
                 <% if (locals.errors && errors.email ) { %>
                     <div class = "feedback" > <%= errors.email.msg%> </div>
                     <% } %>
             </div>
             <div class="columna" >
                 <label>Country </label>
-                <input class="inputs" type="text" name="country" class="count" value="<%=locals.old ? old.country : null %>">
+                <select class="inputs count" type="text" name="country" id="countrie">
+                    <%for(let i in countries){%>
+                    <option  value="<%=countries[i]%>"><%=countries[i].name%></option>
+                    <%}%>
+                </select>
                 <% if (locals.errors && errors.country ) { %>
                     <div class = "feedback" > <%= errors.country.msg%> </div>
                     <% } %>
             </div>
             <div class="columna" >
                 <label>Password </label>
-                <input class="inputs" type="password" name="password" class="pass" value="<%=locals.old ? old.password : null %>">
+                <input class="inputs pass" id="pass" type="password" name="password" value="<%=locals.old ? old.password : null %>">
                 <% if (locals.errors && errors.password ) { %>
                     <div class = "feedback" > <%= errors.password.msg%> </div>
                     <% } %>
             </div>
             <div class="columna" >
             <label>Confirm your password </label>
-                <input class="inputs" type="password" name="forgot" class="confirm" value="<%=locals.old ? old.forgot : null %>">
+                <input class="inputs confirm" type="password" name="forgot" id="confirm" value="<%=locals.old ? old.forgot : null %>">
                 <% if (locals.errors && errors.forgot ) { %>
                     <div class = "feedback" > <%= errors.forgot.msg%> </div>
                     <% } %>
@@ -71,6 +73,9 @@
                     <div class = "feedback" > <%= errors.avatar.msg%> </div>
                     <% } %>
             </div>
+            <div class="errores" >
+                <ul></ul>
+                </div>
             <div class="columna">
                 <button type ="submit" class="botonSignIn">  SIGN-IN</button>
              </div>
