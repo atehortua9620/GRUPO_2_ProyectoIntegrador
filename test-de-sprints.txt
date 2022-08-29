@@ -21,3 +21,6 @@
 - Se efectuo la retrospectiva del Sprint 6.
 - Se esta trabajando en las distintas validaciones requeridas en el Sprint 7.
 
+* Sprint 8:
+- Se procedió a actualizar el Trello del Grupo 2 del Proyecto Integrador.
+- Se efectuo la retrospectiva del Sprint 7.
