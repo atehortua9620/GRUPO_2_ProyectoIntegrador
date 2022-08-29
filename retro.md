@@ -96,3 +96,21 @@
 
 5. Dejar de hacer:
         Pensar solamente en el corto plazo a la hora de encarar un desarrollo web.
+
+
+* Retrospectiva Sprint 6: 
+
+1. Comenzar a hacer:
+        Actualizarse en el día a día con todas las novedades que van surgiendo en el mundo de la programación para la aplicación de dichas novedades en el proyecto integrador en la medida que sea posible.  
+
+2. Hacer más:
+       Investigar por internet distintos modelos de desarrollo web implementados por terceros que permitan ser una fuente de inspiración para el proyecto integrador.
+
+3. Continuar haciendo:
+       Trabajar en equipo y reunirnos con los profesores para mostrar avances o realizar consultas sobre el proyecto integrador.
+        
+4. Hacer menos:
+        De querer trabajar en el Sprint siguiente cuando aún no se culmino totalmente el Sprint actual.
+
+5. Dejar de hacer:
+        Enfocarnos en querer desarrollar funcionalidades o mejoras no solicitadas en el proyecto integrador.
