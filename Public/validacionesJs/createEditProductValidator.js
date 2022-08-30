@@ -3,28 +3,26 @@ window.addEventListener('load', function () {
     formulario.addEventListener('submit', function (e) {
 
       let errores = [];
-  
-      let campoTitle = document.querySelector("input.titulo");
-      if (campoTitle.value == "") {
-        errores.push("El campo title está vacío");
-      } else if (campoTitle.value.length < 5) {
-        errores.push("El campo title debe tener al menos 5 caracteres");
-    }
 
-    let campoDescription = document.querySelector("input.descripcion");
-      if (campoDescription.value == "") {
-        errores.push("El campo descripcion está vacío");
-      } else if (campoDescription.value.length < 20) {
-        errores.push("El campo descripcion debe tener al menos 20 caracteres");
-    }
+      let campoTitle = document.querySelector("#title");
+      let campoDescription = document.querySelector("#description");
+      let campoImage = document.querySelector("#image");
+      
+      if (campoTitle.value.length < 5) {
+        errores.push("Your title must has five characters or upper to be valid");
+      }
 
-  let campoImage = document.querySelector("input.imagen");
-    if (campoImage.value == "") {
-      errores.push("El campo image está vacío");
-    }
+      if (campoDescription.value.length < 20) {
+        errores.push("Your description must has twenty characters or upper to be valid");
+      }
+
+      if(campoImage.value == ''){
+        errores.push('You have to upload an image jpg, jpeg, png, gif')
+      }
 
     if(errores.length > 0){
         e.preventDefault();
+        alert("Sorry we've found some errors in your load new product");
 
     let UlErrores = document.querySelector("div.errores ul");
     for (let i = 0; i < errores.length; i++ ) {

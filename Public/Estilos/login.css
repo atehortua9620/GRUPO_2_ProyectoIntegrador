@@ -53,6 +53,14 @@ h1{
     justify-content: center;
 }
 
+div.errores{
+    color: red;
+}
+
+ul{
+    list-style-type: none;
+}
+
 /* tabletas */
 @media(min-width:361px){
     .botonCreateAccount{

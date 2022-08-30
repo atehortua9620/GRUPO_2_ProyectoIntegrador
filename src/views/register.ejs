@@ -68,7 +68,7 @@
             </div>
             <div class="columna" >
                 <label for="avatar">please load your avatar</label>
-                <input class="inputs" type="file" name="avatar" class="ava">
+                <input accept="image/JPG,image/JPEG,image/PNG,image/GIF" class="inputs" type="file" name="avatar" id="ava">
                 <% if (locals.errors && errors.avatar ) { %>
                     <div class = "feedback" > <%= errors.avatar.msg%> </div>
                     <% } %>
