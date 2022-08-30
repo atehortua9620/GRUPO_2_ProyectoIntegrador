@@ -16,14 +16,10 @@
     <%- include('./partials/menu',userlogged) %>
     <main>
         <h1>Create, Edit and Delete Products</h1>
-        <div class="errores" >
-            <ul></ul>
-            </div>
         <form class='create-edit-product' action="/product/createEditProduct" method="POST" enctype="multipart/form-data">
             <div class="createEditProduct">
                 <label>Title </label>
-                <input type="text" name="title" class="inputs" class="titulo">
-                value="<%=locals.old ? old.title : null %>">
+                <input type="text" name="title" class="inputs" id="title" value="<%=locals.old ? old.title : null %>">
                 <% if (locals.errors && errors.title ) { %>
                     <div class = "feedback" > <%= errors.title.msg%> </div>
                     <% } %>
@@ -46,7 +42,7 @@
 
             <div class="createEditProduct">
                 <label for="image">Image </label>
-                <input type="file" name="image" class="inputs" class="imagen">
+                <input accept="image/JPG,image/JPEG,image/PNG,image/GIF" type="file" name="image" class="inputs" id="image">
                 <% if (locals.errors && errors.image ) { %>
                     <div class = "feedback" > <%= errors.image.msg%> </div>
                     <% } %>
@@ -54,8 +50,7 @@
 
             <div class="createEditProduct">
                 <label>Description </label>
-                <textarea name="description" class="inputs" class="descripcion"></textarea>
-                value="<%=locals.old ? old.description : null %>">
+                <textarea name="description" class="inputs" id="description" value="<%=locals.old ? old.description : null %>"></textarea>
                 <% if (locals.errors && errors.description ) { %>
                     <div class = "feedback" > <%= errors.description.msg%> </div>
                     <% } %>
@@ -64,10 +59,12 @@
                 <label>Price </label>
                 <input type="text" name="price" class="inputs">
             </div>
-
             <div class="createEditProduct">
             <button type ="submit" class="botonNewProduct">LOAD NEW PRODUCT</button>
         </div>
+        <div class="errores" >
+            <ul></ul>
+            </div>
         </form>
         <div class="sugerencias">
             <h2>LIST OF PRODUCTS</h2>
@@ -89,5 +86,6 @@
         </div>
         </main>
     <%- include('./partials/footer') %>
+    <script src="/validacionesJs/createEditProductValidator.js"></script>
     </body>
 </html>
