@@ -74,6 +74,8 @@ const controller = {
     },
    
     procesandoData:(req, res)=>{
+        let errors = validationResult(req);
+        if (errors.isEmpty()) {
 
         let id = productos.length + 1;
         let imagen = '';
@@ -99,6 +101,10 @@ const controller = {
 
         res.redirect('/');
     }
+    else {
+        res.render('createEditProduct', { errors : errors.mapped(), old: req.body });
+        }
+    },
 }
 
 module.exports = controller;

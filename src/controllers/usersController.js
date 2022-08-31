@@ -17,7 +17,9 @@ const controladorUsers  = {
         res.render('./register.ejs',{userlogged,countries});
     },
     registerManager: (req, res)=>{
-       
+        let errors = validationResult(req);
+        if (errors.isEmpty()) {
+
         let id = users.length+1;
         let pssw= bcrypt.hashSync(req.body.password, 10);
         let imagen = '';
@@ -44,13 +46,17 @@ const controladorUsers  = {
         fs.writeFileSync(usersFilePath, JSON.stringify(users, null, "    "));
 
         res.redirect('/users/login');
-
+    } else {
+        res.render('register', { errors : errors.mapped(), old: req.body });
+        }
     },
     login: (req,res )=>{
         let userlogged = req.session.usuarioLogged;
         res.render('./login.ejs',{userlogged});
     },
     loginProcess : (req, res)=>{
+        let errors = validationResult(req);
+        if (errors.isEmpty()) {
 
         let usuario2Log = {
             mail: req.body.email,
@@ -71,6 +77,10 @@ const controladorUsers  = {
                 console.log('no encontre el usuario');  
         }
     }
+    else {
+        res.render('login', { errors : errors.mapped(), old: req.body });
+        }
+    },
 }
 
 
