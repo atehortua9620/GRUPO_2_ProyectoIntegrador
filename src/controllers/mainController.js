@@ -8,6 +8,7 @@ const products = JSON.parse(fs.readFileSync(productFilePath, 'utf-8'));
 const rutas ={
     home: (req,res)=>{
         let userlogged = req.session.usuarioLogged;
+        
         res.render('./index.ejs', {products,userlogged});    
     },
 
