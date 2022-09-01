@@ -15,10 +15,10 @@ window.addEventListener('load', function () {
       let specialCharacters = ['.','-','@','*']
       let passwordValidation = [];
 
-      if (campoNombre.value.length < 2) {
+       if (campoNombre.value.length < 2) {
         errores.push("Your name must has two characters or upper to be valid");
       
-      }
+      } 
       if (campoNickName.value.length == "") {
         errores.push("The nickname field is empty, if you don't have any nickname, please enter your real name");
       }
@@ -54,6 +54,7 @@ window.addEventListener('load', function () {
         alert("Sorry we've found some errors in your registration");
 
     let UlErrores = document.querySelector("div.errores ul");
+    UlErrores.innerHTML = " ";
     for (let i = 0; i < errores.length; i++ ) {
         UlErrores.innerHTML += "<li>" + errores[i] + "<li>"
 

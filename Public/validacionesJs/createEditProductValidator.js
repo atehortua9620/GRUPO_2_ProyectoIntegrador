@@ -25,6 +25,7 @@ window.addEventListener('load', function () {
         alert("Sorry we've found some errors in your load new product");
 
     let UlErrores = document.querySelector("div.errores ul");
+    UlErrores.innerHTML = " ";
     for (let i = 0; i < errores.length; i++ ) {
         UlErrores.innerHTML += "<li>" + errores[i] + "<li>"
 
