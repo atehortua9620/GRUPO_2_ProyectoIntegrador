@@ -96,3 +96,39 @@
 
 5. Dejar de hacer:
         Pensar solamente en el corto plazo a la hora de encarar un desarrollo web.
+
+
+* Retrospectiva Sprint 6: 
+
+1. Comenzar a hacer:
+        Actualizarse en el día a día con todas las novedades que van surgiendo en el mundo de la programación para la aplicación de dichas novedades en el proyecto integrador en la medida que sea posible.  
+
+2. Hacer más:
+       Investigar por internet distintos modelos de desarrollo web implementados por terceros que permitan ser una fuente de inspiración para el proyecto integrador.
+
+3. Continuar haciendo:
+       Trabajar en equipo y reunirnos con los profesores para mostrar avances o realizar consultas sobre el proyecto integrador.
+        
+4. Hacer menos:
+        De querer trabajar en el Sprint siguiente cuando aún no se culmino totalmente el Sprint actual.
+
+5. Dejar de hacer:
+        Enfocarnos en querer desarrollar funcionalidades o mejoras no solicitadas en el proyecto integrador.
+
+
+* Retrospectiva Sprint 7: 
+
+1. Comenzar a hacer:
+        Otra rueda de testeos de la aplicación web con usuarios reales (como ser familiares, amistades y allegados) para recibir un feedback de la parte UX.  
+
+2. Hacer más:
+       Revisión general de todo lo aprendido hasta ahora en el curso para mejorar el desarrollo web en el proyecto integrador.  
+
+3. Continuar haciendo:
+       Revisar los Sprints anteriores por si se puede seguir mejorando lo efectuado de los mismos hasta el momento. 
+        
+4. Hacer menos:
+        De tardar en hacer actualizaciones de código de fácil lectura de terceros que reemplacen otras técnicas de código más extensas.
+
+5. Dejar de hacer:
+        Enfocarnos en querer resolver un problema en el momento sin tomarnos un pequeño tiempo de descanso para luego con la mente despejada poder encarar la solución de una manera más creativa.

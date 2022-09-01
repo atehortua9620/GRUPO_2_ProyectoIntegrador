@@ -17,7 +17,11 @@ const controladorUsers  = {
         res.render('./register.ejs',{userlogged,countries});
     },
     registerManager: (req, res)=>{
-       
+        let userlogged = req.session.usuarioLogged;
+
+        let errors = validationResult(req);
+        if (errors.isEmpty()) {
+
         let id = users.length+1;
         let pssw= bcrypt.hashSync(req.body.password, 10);
         let imagen = '';
@@ -44,33 +48,44 @@ const controladorUsers  = {
         fs.writeFileSync(usersFilePath, JSON.stringify(users, null, "    "));
 
         res.redirect('/users/login');
-
+    } else {
+        res.render('./register', { userlogged,countries, errors : errors.mapped(), old: req.body });
+        }
     },
     login: (req,res )=>{
+        
         let userlogged = req.session.usuarioLogged;
         res.render('./login.ejs',{userlogged});
     },
     loginProcess : (req, res)=>{
+        let userlogged = req.session.usuarioLogged;
 
-        let usuario2Log = {
-            mail: req.body.email,
-            contraseña: req.body.password
-        }
-        
-        users.find((usuario)=>{
-            if(usuario.mail == usuario2Log.mail){
-                if(bcrypt.compare(usuario2Log.contraseña,usuario.contraseña)){
-                    console.log('hola'+' '+usuario.nombre+' '+'te encontré');
-                    req.session.usuarioLogged = usuario;
-                    console.log(req.session.userlogged)
-                    res.redirect('/');
-                }
-            }
-        })
-            if(req.session.usuarioLogged == undefined){
-                console.log('no encontre el usuario');  
-        }
+        let errors = validationResult(req);
+        if (errors.isEmpty()) { 
+
+    let usuario2Log = {
+        mail: req.body.email,
+        contraseña: req.body.password
     }
+    
+    users.find((usuario)=>{
+        if(usuario.mail == usuario2Log.mail){
+            if(bcrypt.compare(usuario2Log.contraseña,usuario.contraseña)){
+                console.log('hola'+' '+usuario.nombre+' '+'te encontré');
+                req.session.usuarioLogged = usuario;
+                console.log(req.session.userlogged)
+                res.redirect('/');
+            }
+        }
+    })
+        if(req.session.usuarioLogged == undefined){
+            console.log('no encontre el usuario');  
+    }
+    }
+    else {
+        res.render('login', { userlogged,errors : errors.mapped(), old: req.body });
+        } 
+    },
 }
 
 

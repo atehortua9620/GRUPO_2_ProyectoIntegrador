@@ -74,6 +74,10 @@ const controller = {
     },
    
     procesandoData:(req, res)=>{
+        let userlogged = req.session.usuarioLogged;
+
+        let errors = validationResult(req);
+        if (errors.isEmpty()) {
 
         let id = productos.length + 1;
         let imagen = '';
@@ -99,6 +103,10 @@ const controller = {
 
         res.redirect('/');
     }
+    else {
+        res.render('createEditProduct', { productos,userlogged,errors : errors.mapped(), old: req.body });
+        }
+    },
 }
 
 module.exports = controller;

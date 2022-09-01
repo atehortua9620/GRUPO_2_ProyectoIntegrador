@@ -15,3 +15,12 @@
 - Se procedió a actualizar el Trello del Grupo 2 del Proyecto Integrador.
 - Se efectuo la retrospectiva del Sprint 5.
 - Se trabajo en el Diagrama de Base de Datos y se esta trabajando en las distintas configuraciones requeridas en el Sprint 6.
+
+* Sprint 7:
+- Se procedió a actualizar el Trello del Grupo 2 del Proyecto Integrador.
+- Se efectuo la retrospectiva del Sprint 6.
+- Se esta trabajando en las distintas validaciones requeridas en el Sprint 7.
+
+* Sprint 8:
+- Se procedió a actualizar el Trello del Grupo 2 del Proyecto Integrador.
+- Se efectuo la retrospectiva del Sprint 7.
