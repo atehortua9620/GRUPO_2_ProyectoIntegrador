@@ -31,22 +31,6 @@
         "nombre": "asdfsdf",
         "nick": "asdfs",
         "mail": "sfdsf@gmail.com",
-        "pais": "[object Object]",
-<<<<<<< HEAD
-        "contraseña": "$2a$10$Fu3yZMHbAriVhoeTO358xujwvSHYPufLrcpQpQbtMvfQ8nmSMW1XW",
-        "imagen": "default-user.jpg"
-    },
-    {
-        "id": 13,
-        "nombre": "Andres Atehortua Henao",
-        "nick": "Andres",
-        "mail": "atehortua9620@gmail.com",
-        "pais": "[object Object]",
-        "contraseña": "$2a$10$kiqoz5z/tBG8YEGMZpnGKu7FQwgHuxEn0jXx.SnczPA5JSJmELWVW",
-        "imagen": "image_user1661993813989.png"
-=======
-        "contraseña": "$2a$10$NPtWINOGAr4dlv0AK6icVew33469qEXvAyKvofCv6/L6/IJ5R5kvC",
-        "imagen": "image_user1661997592085.png"
->>>>>>> Andres
+        "pais": "[object Object]"
     }
 ]
