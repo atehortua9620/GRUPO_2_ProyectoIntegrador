@@ -32,5 +32,14 @@
         "nick": "asdfs",
         "mail": "sfdsf@gmail.com",
         "pais": "[object Object]"
+    },
+    {
+        "id": 5,
+        "nombre": "Andres Atehortua Henao",
+        "nick": "ñakljndcvkv ",
+        "mail": "atehortua9620@gmail.com",
+        "pais": "[object Object]",
+        "contraseña": "$2a$10$2ijiKp6W4OtcISXL1p5kZupdZ/iAaa3yfTH3OKMc9m2Z7vRXNPbyC",
+        "imagen": "image_user1662154390857.png"
     }
 ]

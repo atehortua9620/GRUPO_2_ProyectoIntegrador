@@ -15,10 +15,13 @@ const rutas ={
     productCar:(req,res)=>{
         let userlogged = req.session.usuarioLogged;
         res.render('./productcar.ejs',{userlogged});
+    },
+
+    killsession: (req,res)=>{
+        req.session.destroy((err) => {
+        res.redirect('/');
+      })
     }
-    /* notFound: (req, res, next) =>{
-        res.status(404).render('./not-found')
-    } */
 }
 
 module.exports = rutas;

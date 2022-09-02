@@ -8,8 +8,8 @@ const send2log = require('../midelwares/send2login');
 
 
 router.get('/',mainController.home);
-
 router.get('/productCar',send2log,mainController.productCar);
+router.get('/logout', mainController.killsession)
 
 /* router.get('*', mainController.notFound); */
 
