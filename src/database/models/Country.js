@@ -17,5 +17,12 @@ let config = {
 };
 const Country = sequelize.define(alias, cols, config)
 
+Country.associate = function(models) {
+  Country.hasMany(models.User, {
+    as: 'user',
+  foreignKey: 'countries_id'
+});
+}
+
 return Country
 }

@@ -17,5 +17,12 @@ let config = {
 };
 const Role = sequelize.define(alias, cols, config)
 
+Role.associate = function(models) {
+  Role.hasMany(models.User, {
+    as: 'user',
+    foreignKey: 'roles_id'
+});
+}
+
 return Role
 }
