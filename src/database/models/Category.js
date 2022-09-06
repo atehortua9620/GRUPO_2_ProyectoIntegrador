@@ -17,5 +17,12 @@ let config = {
 };
 const Category = sequelize.define(alias, cols, config)
 
+Category.associate = function(models) {
+  Category.hasMany(models.Product, {
+    as: 'product',
+    foreignKey: 'categories_id'
+});
+}
+
 return Category
 }

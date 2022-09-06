@@ -17,5 +17,12 @@ let config = {
 };
 const Material = sequelize.define(alias, cols, config)
 
+Material.associate = function(models) {
+  Material.hasMany(models.Product, {
+    as: 'product',
+    foreignKey: 'materials_id'
+});
+}
+
 return Material
 }
