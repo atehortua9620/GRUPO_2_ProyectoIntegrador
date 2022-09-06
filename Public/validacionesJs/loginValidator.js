@@ -9,6 +9,9 @@ window.addEventListener('load', function () {
       let specialCharacters = ['.','-','@','*']
       let passwordValidation = [];
 
+      
+
+
       if (campoEmail.value == "") {
         errores.push("Email field is empty, please fill");
       } else if (!campoEmail.value.includes('@')) {

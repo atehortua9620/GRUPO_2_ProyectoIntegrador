@@ -7,6 +7,7 @@ const { body } = require ( 'express-validator' );
 /* const {createEditProduct,procesandoData } = require('../controllers/productController'); */
 
 const productController = require('../controllers/productController');
+const superValid = require('../midelwares/superValid')
 
 const storage = multer.diskStorage({
     destination: (req, file, cb)=>{
@@ -46,7 +47,7 @@ const validateCreateEditProduct = [
 /*Ruta principal de productos */
 router.get('/detail/:id',productController.productDetail);
 /*Ruta que envia el nuevo producto */
-router.get('/createEditProduct',productController.createEditProduct);
+router.get('/createEditProduct',superValid,productController.createEditProduct);
 /*Ruta para procesar informacion del nuevo producto */
 router.post('/createEditProduct',uploadFile.single('image'),validateCreateEditProduct,productController.procesandoData);
 /* Ruta que elimina el producto*/

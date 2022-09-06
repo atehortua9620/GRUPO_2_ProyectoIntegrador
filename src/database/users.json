@@ -6,7 +6,8 @@
         "mail": "andresatehortua@digitalhouse.com",
         "pais": "Colombia",
         "contraseña": "mipasswordAndres",
-        "imagen": "image_user1657166020520.png"
+        "imagen": "image_user1657166020520.png",
+        "roll": "super"
     },
     {
         "id": "2",
@@ -15,31 +16,27 @@
         "mail": "leobellanz@gmail.com",
         "pais": "Argentina",
         "contraseña": "mipasswordLeo",
-        "imagen": "default-user.jpg"
+        "imagen": "default-user.jpg",
+        "roll": "super"
     },
     {
-        "id": "3",
-        "nombre": "Matias Borysiuk",
-        "nick": "Mati",
-        "mail": "borysiukmatias@hotmail.com",
-        "pais": "Argentina",
-        "contraseña": "mipasswordMatias",
-        "imagen": "default-user,jpg"
+        "id": 3,
+        "nombre": "Andres Atehortua Henao",
+        "nick": "Andres",
+        "mail": "atehortua9620@gmail.com",
+        "pais": "[object Object]",
+        "contraseña": "$2a$10$58OFNpF9BJztTdIzScR6TOhXpUj8uAL0/XA/W8sBu4e3Z7o6wJDFK",
+        "imagen": "image_user1662499814730.png",
+        "roll": "standard"
     },
     {
         "id": 4,
-        "nombre": "asdfsdf",
-        "nick": "asdfs",
-        "mail": "sfdsf@gmail.com",
-        "pais": "[object Object]"
-    },
-    {
-        "id": 5,
-        "nombre": "Andres Atehortua Henao",
-        "nick": "ñakljndcvkv ",
-        "mail": "atehortua9620@gmail.com",
-        "pais": "[object Object]",
-        "contraseña": "$2a$10$2ijiKp6W4OtcISXL1p5kZupdZ/iAaa3yfTH3OKMc9m2Z7vRXNPbyC",
-        "imagen": "image_user1662154390857.png"
+        "nombre": "Administrador",
+        "nick": "Admin",
+        "mail": "admin@admin.com",
+        "pais": "Colombia",
+        "contraseña": "$2a$10$MnuH.q0gKOK7S77pVnLs4OYkDcwN1qHio6Kp2tSvHvEPeNSqa33WS",
+        "imagen": "image_user1662506192754.jpg",
+        "roll": "super"
     }
 ]

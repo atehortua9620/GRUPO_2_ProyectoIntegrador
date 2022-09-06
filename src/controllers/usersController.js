@@ -20,6 +20,7 @@ const controladorUsers  = {
         let userlogged = req.session.usuarioLogged;
 
         let errors = validationResult(req);
+
         if (errors.isEmpty()) {
 
         let id = users.length+1;
@@ -42,6 +43,7 @@ const controladorUsers  = {
             pais: req.body.country,
             contraseña: pssw,
             imagen: imagen,
+            roll: "standard"
         }
 
         users.push(nuevoUsuario);
@@ -55,6 +57,7 @@ const controladorUsers  = {
     login: (req,res )=>{
         
         let userlogged = req.session.usuarioLogged;
+        console.log(userlogged);
         res.render('./login.ejs',{userlogged});
     },
     loginProcess : (req, res)=>{
@@ -79,7 +82,9 @@ const controladorUsers  = {
         }
     })
         if(req.session.usuarioLogged == undefined){
-            console.log('no encontre el usuario');  
+            
+            res.redirect('/users/login');
+           
     }
     }
     else {

@@ -45,7 +45,7 @@
                 <label>Country </label>
                 <select class="inputs count" type="text" name="country" id="countrie">
                     <%for(let i in countries){%>
-                    <option  value="<%=countries[i]%>"><%=countries[i].name%></option>
+                    <option  value="<%=countries[i].name%>"><%=countries[i].name%></option>
                     <%}%>
                 </select>
                 <% if (locals.errors && errors.country ) { %>

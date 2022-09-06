@@ -17,14 +17,16 @@
         
     </form>
     <div class=" icons">
-        <a href="/productCar"><i class="icon fas fa-cart-arrow-down"></i></a>
+        
         <a href="/"><i class="icon fas fa-home"></i></a>
+        <a href="/productCar"><i class="icon fas fa-cart-arrow-down"></i></a>
         <%if(userlogged == undefined){%>
         <a href="/users/register"><i class="icon fas fa-user-circle"></i></a>
         <%}else{%>
-            <a href="/users/register"><img class="avatarImagen" src="/images/users/<%=userlogged.imagen%>" alt="usuario"></a>
             <a id= 'logout'href='/logout' class="icon fa-solid fa-right-from-bracket"></a>
-
+            <a href="/product/createEditProduct" class="icon fa-solid fa-screwdriver"></a>
+            <a href="/users/register"><img class="avatarImagen" src="/images/users/<%=userlogged.imagen%>" alt="usuario"></a>
+            
             <%}%>
     </div>
     <i class=" burguer icon fas fa-bars"></i>
