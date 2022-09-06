@@ -21,9 +21,9 @@ let config = {
 };
 const Product_image = sequelize.define(alias, cols, config);
 
-User.associate = function(models) {
-  User.belongsTo(models.Product_image, {
-  as: 'product_image',
+Product_image.associate = function(models) {
+  Product_image.belongsTo(models.Product, {
+  as: 'product',
   foreignKey: 'products_id'
 });
 }

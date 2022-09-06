@@ -33,16 +33,22 @@ let config = {
 };
 const Product = sequelize.define(alias, cols, config);
 
-User.associate = function(models) {
-  User.belongsTo(models.Material, {
+Product.associate = function(models) {
+  Product.belongsTo(models.Material, {
   as: 'material',
   foreignKey: 'materials_id'
 });
 
-  User.belongsTo(models.Category, {
+Product.belongsTo(models.Category, {
   as: 'category',
   foreignKey: 'categories_id'
 });
+
+Product.hasMany(models.Product_image, {
+  as: 'product_image',
+  foreignKey: 'products_id'
+});
+
 }
 
 return Product
