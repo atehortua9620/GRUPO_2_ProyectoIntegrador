@@ -14,6 +14,7 @@
             </select>
             
         </div>
+        <!-- <button class="search" type="submit">Search</button> -->
         
     </form>
     <div class=" icons">
@@ -24,12 +25,18 @@
         <a href="/users/register"><i class="icon fas fa-user-circle"></i></a>
         <%}else{%>
             <a id= 'logout'href='/logout' class="icon fa-solid fa-right-from-bracket"></a>
+            <%if(userlogged.roll == 'super'){%>
             <a href="/product/createEditProduct" class="icon fa-solid fa-screwdriver"></a>
+            <%}%>
             <a href="/users/register"><img class="avatarImagen" src="/images/users/<%=userlogged.imagen%>" alt="usuario"></a>
             
             <%}%>
     </div>
-    <i class=" burguer icon fas fa-bars"></i>
+    
+    <label for="burguer">
+        <input class="burguer" type="checkbox" id="burguer"/>
+        <i class=" burguer icon fas fa-bars"></i>
+    </label>
 
     <script src="js/killSessionHandler.js"></script>
 </header>
