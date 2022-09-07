@@ -1,5 +1,6 @@
-label input{
-    visibility: hidden;
+.titulo{
+    color: white;
+    font-size: 15px;
 }
 header{
     position: fixed;
@@ -12,7 +13,6 @@ header{
     box-shadow: inset -5px 10px 50px black;
    /*  border: solid red 1px; */
 }
-
 .contenedorUno{
     display: flex;
     justify-content: space-evenly;
@@ -161,17 +161,17 @@ main button:hover{
     .sugerencia_item{
         width: 40%;
     }
-    .icons{
-        display: none;
-    }
-    
 
 }
 
 /* desktop */
 
 @media(min-width:361px){
-    
+
+    .titulo{
+        color: white;
+        font-size: 25px;
+    }
 
     header{
         height: 200px;
@@ -215,9 +215,6 @@ main button:hover{
     }
     .logoMenu{
         height: 100%;
-    }
-    button .search{
-        width: 100%;
     }
     .avatarImagen{
         height: 75px;

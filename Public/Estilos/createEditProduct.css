@@ -63,12 +63,25 @@ footer button:hover{
     background-color: gray;
     color: black;
 }
+.create-edit-product{
+    background-color:#4b3621;
+    box-shadow: inset -5px 10px 50px black;
+    width: 40%;
+    border-radius: 10px;
+}
+.contenedor-form{
+    width: 100%;
+    /* border: solid 1px red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .createEditProduct{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: grey;
+    background-color:none;
     padding: 10px;
     width: 40%;
     font-family: 'roboto';
