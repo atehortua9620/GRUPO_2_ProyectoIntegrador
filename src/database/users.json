@@ -38,5 +38,25 @@
         "contraseña": "$2a$10$MnuH.q0gKOK7S77pVnLs4OYkDcwN1qHio6Kp2tSvHvEPeNSqa33WS",
         "imagen": "image_user1662506192754.jpg",
         "roll": "super"
+    },
+    {
+        "id": 5,
+        "nombre": "Tobias",
+        "nick": "Tobi",
+        "mail": "tobi@digital.com",
+        "pais": "Argentina",
+        "contraseña": "$2a$10$FJaLWlDn4oUXZrL4TH66i.tfBz.R5GHxZvzUcsXgIdfJEOfr0usAe",
+        "imagen": "image_user1662597065087.png",
+        "roll": "standard"
+    },
+    {
+        "id": 6,
+        "nombre": "Mafe",
+        "nick": "Mafe",
+        "mail": "Mafe@gmial.com",
+        "pais": "Colombia",
+        "contraseña": "$2a$10$OBypXpOxQry0BXQ5pcFG4.qBx9hyviPtwrQWnjbvBDRxxU5MVo65y",
+        "imagen": "image_user1668573443201.png",
+        "roll": "standard"
     }
 ]
